@@ -69,6 +69,8 @@ Guide front-matter adds `use_when`, `boundary`, `boundary_more`, `outcome` ("You
 
 **Responsive rule (2026-09-22, after Aster's review of the six guides).** At desktop widths the four rail cards sit beside the body and stay in view. Below 980px, *How this guide works* and *Before you start* remain above the steps, and *On this page* and *The key distinction* move below the starter instruction so the participant reaches the work sooner; the meta strip drops to two columns, then one at phone width. The build renders the two moved cards a second time in that lower position and the stylesheet shows exactly one copy at any width, so the layout needs no script and no `display: contents`. Desktop is unchanged.
 
+**Preview band (2026-09-22).** Every page carries a pre-1.0 notice below the header so the status survives forwarding. It is one constant, `PREVIEW_BAND` in `build/build.py`; set it to `None` at 1.0 and rebuild. While the request form's recipient is unset, the form and its page say so and route requests to the program guide on Teams.
+
 
 ## Content conventions
 

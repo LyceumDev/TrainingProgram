@@ -23,7 +23,7 @@ A program guide sits with you and the assistant for about an hour, on one real t
 
 ## Request a session
 
-This prototype has no server. Submitting hands the request to your email application, addressed to the program guide, with your answers written out; nothing is stored here. If the address is not configured yet, or your email application does not open, copy the summary that appears and send it yourself.
+This prototype has no server. Submitting hands the request to your email application, addressed to the program guide, with your answers written out; nothing is stored here. During the preview the address is not yet set: copy the summary that appears and send it to Osiris Maldonado on Teams, or simply ask directly.
 
 <form id="guided-session-form" class="form" data-to="" novalidate>
   <div class="field">

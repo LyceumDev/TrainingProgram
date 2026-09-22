@@ -152,7 +152,7 @@
         status.hidden = false;
         status.textContent = to
           ? "Your email application should open with the request written for you, addressed to the program guide. If it does not, copy the summary below and send it yourself."
-          : "The program's request address is not configured in this prototype yet. Copy the summary below and send it to your program guide.";
+          : "This is the preview: the request address is set when the portal moves to its approved home. For now, copy the summary below and send it to Osiris Maldonado on Teams, or simply ask directly.";
         status.focus();
       }
       if (to) {

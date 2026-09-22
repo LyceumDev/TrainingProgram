@@ -106,6 +106,7 @@ PAIRS = [
     ("ok", "ok-soft", 4.5, "Verified label, do callout"), ("info", "info-soft", 4.5, "Inferred label, verify callout"),
     ("warn", "warn-soft", 4.5, "Decided label, form warning"), ("stop", "stop-soft", 4.5, "stop callout"),
     ("warm-ink", "warm-soft", 4.5, "record callout"), ("warm-ink", "paper", 4.5, "warm text"),
+    ("warm-ink", "warm-soft", 4.5, "preview band"),
     ("modernization", "paper-3", 4.5, "modernization eyebrow"), ("business-analysis", "paper-3", 4.5, "business-analysis eyebrow"), ("customer-support", "paper-3", 4.5, "customer-support eyebrow"),
     ("accent", "paper", 3.0, "focus ring (non-text)"),
 ]

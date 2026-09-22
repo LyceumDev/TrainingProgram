@@ -95,6 +95,9 @@ main:focus { outline: none; }
 /* ---------------------------------------------------------------- header */
 .site-head { position: sticky; top: 0; z-index: 50; background: color-mix(in srgb, var(--paper) 86%, transparent); backdrop-filter: saturate(1.4) blur(10px); border-bottom: 1px solid var(--line); }
 .site-head-row { display: flex; align-items: center; gap: 1rem; min-height: 4.25rem; }
+.preview-band { background: var(--warm-soft); color: var(--warm-ink); border-bottom: 1px solid var(--line); font-size: .92rem; }
+.preview-band p { margin: 0; padding: .55rem 0; }
+.preview-band strong { color: inherit; letter-spacing: .02em; }
 .brand { display: inline-flex; align-items: center; gap: .6rem; font-weight: 700; text-decoration: none; color: var(--ink); font-family: var(--font-display); letter-spacing: -.01em; }
 .brandmark { width: 2rem; height: 2rem; }
 .site-nav { margin-left: auto; }

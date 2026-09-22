@@ -308,6 +308,16 @@ def relink(htmltext, prefix):
     return htmltext.replace('href="~/', f'href="{prefix}').replace('src="~/', f'src="{prefix}')
 
 
+PREVIEW_BAND = ("Preview", "pre-1.0 draft. Content is under review; environments, standards, and the request form are not yet final.")  # set to None at 1.0
+
+def preview_band_html():
+    """A visible pre-release notice on every page, so the status survives forwarding. Off when PREVIEW_BAND is None."""
+    if not PREVIEW_BAND:
+        return ""
+    label, text = PREVIEW_BAND
+    return f'<div class="preview-band" role="note"><p class="wrap"><strong>{esc(label)}:</strong> {esc(text)}</p></div>'
+
+
 def guide_wrap(page, body):
     """Task-guide layout: an overview rail (read first) beside the two-part body."""
     m = page.meta
@@ -387,6 +397,7 @@ def build():
                .replace("{{description}}", esc(page.meta.get("summary", "")))
                .replace("{{section}}", esc(page.section))
                .replace("{{brandmark}}", brand)
+               .replace("{{preview_band}}", preview_band_html())
                .replace("{{nav}}", nav_html(page))
                .replace("{{crumbs}}", crumbs_html(page, pages))
                .replace("{{heading}}", heading_html(page))
