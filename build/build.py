@@ -307,6 +307,10 @@ def build():
         src = BUILD / asset
         if src.exists():
             shutil.copy(src, SITE / "assets" / asset)
+    for hosting in ("staticwebapp.config.json", "not-invited.html"):   # Azure Static Web Apps: auth rules + the 403 page
+        src = BUILD / hosting
+        if src.exists():
+            shutil.copy(src, SITE / hosting)
     brand = illustration("brandmark", "brandmark")
     index = []
     for page in pages.values():

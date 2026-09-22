@@ -74,6 +74,19 @@ site/                       the rendered prototype (generated; do not edit)
 - **The shared work-state vocabulary** is the only label set: Verified · Inferred · Decided · Open (plan §13).
 - **The guided-session form** hands the request to the person's email application. Set the approved program address in `data-to` in `content/support/request-a-guided-session.md`; until it is set, the page tells the person to send the summary themselves and the build prints a warning.
 
+## Hosting for reviewers (a link, sign-in, the full site)
+
+The plan's approved fallback for hosting is an Azure Static Web App with organizational sign-in (plan §11). This repository is ready for it: `build/staticwebapp.config.json` is copied into `site/` on every build and requires the custom role **reviewer** on every route, so only people invited by email can see anything; anonymous visitors are sent to the Microsoft sign-in, and signed-in people who were not invited see `not-invited.html`. The GitHub Actions workflow runs the automated checks on every push and deploys `site/` only once the deployment token exists as a repository secret.
+
+To turn it on (IT's tenant preferred; the program owner's subscription is acceptable for a prototype review with IT informed):
+
+1. Azure portal: create a **Static Web App** (Free plan is enough for a review), deployment source **Other**. Copy its **deployment token**.
+2. GitHub, this repository: Settings, Secrets and variables, Actions, new secret `AZURE_STATIC_WEB_APPS_API_TOKEN` with that token. The next push to `main` (or Actions, "Check and deploy", Run workflow) deploys the site.
+3. Azure portal, the Static Web App, **Role management**, Invite: each reviewer's work email, provider **Microsoft Entra ID**, role `reviewer`, and an expiry for the invitation link. Send each person the link the portal produces, or simply the site URL; they sign in with their normal work account and are through.
+4. Invite the program owner as `reviewer` too. Uninvited sign-ins get the not-invited page, not the content.
+
+Nothing is public at any point: the repository is private, the site requires sign-in and an invitation, and every page is marked no-index. Rotate the deployment token if it is ever exposed; it lives only in the GitHub secret.
+
 ## To SharePoint
 
 Each content file is one page. Paste the rendered body (or the markdown, via a converter) into a modern page; keep the section order. Product-specific setup pages stay separate and replaceable; the collaboration model, safety rules, and recipes never name a vendor.

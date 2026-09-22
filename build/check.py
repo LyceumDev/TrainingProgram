@@ -32,9 +32,14 @@ for p in pages:
     for ref in re.findall(r'(?:href|src)="([^"]+)"', html):
         if ref.startswith(("http://", "https://", "mailto:", "data:")):
             continue
+        if ref.startswith("/.auth/"):          # Azure Static Web Apps sign-in endpoints exist only on the host
+            continue
         refs += 1
         path, _, frag = ref.partition("#")
-        target = p if not path else (p.parent / path).resolve()
+        if path.startswith("/"):                # root-absolute (hosting pages): resolve against the site root
+            target = (SITE / path.lstrip("/")).resolve()
+        else:
+            target = p if not path else (p.parent / path).resolve()
         if not target.exists():
             failures.append(f"{p.relative_to(SITE)}: broken link {ref}")
         elif frag and target in ids and frag not in ids[target]:

@@ -1,0 +1,20 @@
+{
+  "$comment": "Azure Static Web Apps configuration. Copied into site/ by build.py. Every route requires the custom role 'reviewer', which is granted only by invitation (Role management in the Azure portal). Anonymous visitors are sent to the Microsoft sign-in; signed-in but uninvited visitors get 403.",
+  "routes": [
+    { "route": "/.auth/login/github", "statusCode": 404 },
+    { "route": "/.auth/login/twitter", "statusCode": 404 },
+    { "route": "/.auth/login/google", "statusCode": 404 },
+    { "route": "/.auth/login/facebook", "statusCode": 404 },
+    { "route": "/assets/*", "allowedRoles": ["reviewer"] },
+    { "route": "/*", "allowedRoles": ["reviewer"] }
+  ],
+  "responseOverrides": {
+    "401": { "redirect": "/.auth/login/aad?post_login_redirect_uri=.referrer", "statusCode": 302 },
+    "403": { "rewrite": "/not-invited.html", "statusCode": 403 }
+  },
+  "globalHeaders": {
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "same-origin",
+    "X-Robots-Tag": "noindex, nofollow"
+  }
+}
