@@ -32,7 +32,7 @@ The assistant reads as the toughest person in the meeting would, before that per
 4. **Ask for the ambiguities and the missing decisions**
    Sentences with two readings, undefined terms, numbers without units or dates, "recently" and "significant" and "most." Places where the memo implies a choice has been made, or must be made, without saying who makes it.
 5. **Review the findings and the proposed rewrites**
-   For every Open claim: source it, soften it to an inference, or cut it. No fourth option. Part 2 below has the checks.
+   For every Open claim: source it, restate it as Inferred, retain it explicitly as Open, or cut it. Record the disposition. Do not allow it to remain written as fact. Part 2 below has the checks.
 6. **Save the review note and the version that went out**
    If a claim was cut for lack of a source, note it; the question will come back. Part 2 says what the record holds.
 
@@ -41,7 +41,7 @@ The assistant reads as the toughest person in the meeting would, before that per
 !!! starter "Starter instruction"
     Copy this as your first message and name the readers.
 
-        Review this memo as a skeptical reader who will have to act on it. The readers are [who], and they are being asked to [what]. For every claim that matters, ask what it is based on and list the ones without a source as Open, with their location. Flag ambiguity: sentences with two readings, undefined terms, numbers without units or dates. Find any decision the memo implies without saying who makes it. Propose a specific rewrite for each finding, marked as a proposal.
+        Review this memo as a skeptical reader who will have to act on it. The readers are [who], and they are being asked to [what]. For every claim that matters, ask what it is based on and list the ones without a source as Open, with their location. Flag ambiguity: sentences with two readings, undefined terms, numbers without units or dates. Find any decision the memo implies without saying who makes it. Propose a specific rewrite for each finding, marked as a proposal. Do not add facts or strengthen certainty in a proposed rewrite.
 
 ## Use this review-note shape {: .part data-part="The deliverable" }
 
@@ -54,7 +54,7 @@ Findings first, rewrites second, your dispositions last.
 3. **Missing decisions** Each with a suggested owner.
 4. **Restricted details found** Anything that should not travel.
 5. **Proposed rewrites** Marked as proposals.
-6. **Your dispositions** Sourced, softened, cut, or kept, with the reason.
+6. **Your dispositions** Sourced, restated as Inferred, retained explicitly as Open, or cut, with the reason.
 
 </div>
 
@@ -69,7 +69,7 @@ These are not more drafting steps. They are the checks that make the memo safe t
 ### What you decide
 
 - Which findings to act on. Some ambiguity is deliberate and appropriate; you know which.
-- Whether an unsupported claim gets a source, is softened to an inference, or comes out.
+- Whether an unsupported claim gets a source, is restated as Inferred, stays explicitly Open, or comes out.
 - The final text. The assistant may draft or propose changes. You review and approve the final text, remain accountable for its use, and preserve contribution provenance where material.
 
 </div>
@@ -78,7 +78,7 @@ These are not more drafting steps. They are the checks that make the memo safe t
 
 ### Check before use
 
-- Every claim marked Open has a disposition: sourced, softened, or cut.
+- Every claim initially marked Open has a recorded disposition: sourced, restated as Inferred, retained explicitly as Open, or cut.
 - The memo's ask, read aloud, says who is being asked to decide what, by when.
 - No real personal, customer, or payroll detail remains that should not.
 

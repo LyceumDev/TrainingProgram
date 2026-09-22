@@ -18,7 +18,7 @@ Tuesday morning. A manager forwards a two-paragraph email asking for "a better w
 
 1. You open the project record for this request, add the three sources, and write the purpose in two sentences.
 2. With the [problem statement guide](~/guides/01-turn-a-vague-request-into-a-clear-problem-statement.html), the assistant drafts a structured statement from the email and the documents. Two claims come back labeled Open, because nothing in the sources supports them. You call the manager; one is confirmed, one was a guess. The record gets both.
-3. With the [requirements guide](~/guides/02-extract-requirements-in-the-authors-own-words.html), the assistant lifts fourteen candidate requirements, each with the sentence it came from. You strike three that were wishes, not requirements.
+3. With the [requirements guide](~/guides/02-extract-requirements-in-the-authors-own-words.html), the assistant lifts fourteen candidate requirements, each with the sentence it came from. You exclude three that were wishes, not requirements, and record why.
 4. By lunch you have a one-page problem statement and a traced requirements list, both with sources, to take to Thursday's meeting. The record is updated: what was decided, what is open, who owns the next step.
 
 The workflow itself depends on no particular product. Using it with organizational material still depends on an approved environment, or on the guide's approved environment during the recorded interim. Beyond that, it took the documents and an hour.

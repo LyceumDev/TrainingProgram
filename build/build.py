@@ -318,21 +318,32 @@ def guide_wrap(page, body):
         "Replace personal, customer, payroll, or credential details.",
         "Keep source names and locations so claims can be checked."]
     before_html = "".join(f"<li>{esc(b)}</li>" for b in before)
-    key = ""
-    if m.get("key_a") and m.get("key_b"):
-        ka, _, ta = m["key_a"].partition(":")
-        kb, _, tb = m["key_b"].partition(":")
-        key = (f'<section class="rail-card" aria-labelledby="rail-key"><h2 id="rail-key">The key distinction</h2>'
-               f'<p><strong>{esc(ka.strip())}:</strong> {esc(ta.strip())}</p><p><strong>{esc(kb.strip())}:</strong> {esc(tb.strip())}</p></section>')
+    def late(sfx):
+        """The two orientation cards that may move below the starter instruction on narrow screens."""
+        k = ""
+        if m.get("key_a") and m.get("key_b"):
+            ka, _, ta = m["key_a"].partition(":")
+            kb, _, tb = m["key_b"].partition(":")
+            k = (f'<section class="rail-card rail-late" aria-labelledby="rail-key{sfx}"><h2 id="rail-key{sfx}">The key distinction</h2>'
+                 f'<p><strong>{esc(ka.strip())}:</strong> {esc(ta.strip())}</p><p><strong>{esc(kb.strip())}:</strong> {esc(tb.strip())}</p></section>')
+        return (f'<nav class="rail-card rail-late" aria-labelledby="rail-toc{sfx}"><h2 id="rail-toc{sfx}">On this page</h2>'
+                f'<ul class="rail-toc">{toc}</ul></nav>' + k)
     rail = (
         '<aside class="rail" aria-label="Guide overview">'
         '<section class="rail-card rail-how" aria-labelledby="rail-how"><h2 id="rail-how">How this guide works</h2>'
         '<p>The page has two layers. Complete the task first; then apply the review and authority checks before the work goes anywhere.</p>'
         '<ol class="rail-steps"><li>Do the work step by step</li><li>Review claims and framing</li><li>Confirm boundaries and save</li></ol></section>'
         f'<section class="rail-card" aria-labelledby="rail-before"><h2 id="rail-before">Before you start</h2><ul class="rail-checks">{before_html}</ul></section>'
-        f'<nav class="rail-card" aria-labelledby="rail-toc"><h2 id="rail-toc">On this page</h2><ul class="rail-toc">{toc}</ul></nav>'
-        f'{key}</aside>')
-    return f'<div class="wrap guide">{rail}<div class="guide-main prose">{body}</div></div>'
+        f'{late("")}</aside>')
+    # Narrow screens (2026-09-22, Aster's review of the six guides): "How this guide works" and
+    # "Before you start" stay above the steps; "On this page" and "The key distinction" move below the
+    # starter instruction so the participant reaches the work sooner. Those two cards are rendered a
+    # second time there and hidden at desktop widths by CSS; exactly one copy is ever displayed.
+    cut = re.search(r'<h2[^>]*data-part="The deliverable"[^>]*>', body)
+    body_a, body_b = (body[:cut.start()], body[cut.start():]) if cut else (body, "")
+    inline = f'<aside class="rail-inline" aria-label="Guide overview, continued">{late("-b")}</aside>'
+    tail = f'<div class="guide-main prose">{body_b}</div>' if body_b else ""
+    return f'<div class="wrap guide">{rail}<div class="guide-main prose">{body_a}</div>{inline}{tail}</div>'
 
 
 def write_redirects():

@@ -115,7 +115,7 @@ The assistant returns
 :   Twenty-two claims: nine Verified, six Inferred, three Decided, four Open. One flag: "the vendor will be renewed in October" reads as Decided, but no decision-maker or record supports it; the only source is a forwarded note saying it "probably" will.
 
 You correct
-:   You confirm the renewal was never decided. It becomes Open, with the procurement lead as owner, and the memo's wording is softened to match.
+:   You confirm the renewal was never decided. It becomes Open, with the procurement lead as owner, and the memo's wording is changed so it no longer reads as fact.
 
 You keep
 :   The labeled memo and the Open list in the project folder.

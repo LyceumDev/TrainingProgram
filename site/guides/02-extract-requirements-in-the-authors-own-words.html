@@ -28,8 +28,8 @@
 <main id="main" tabindex="-1">
   <nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../index.html">Home</a></li><li><a href="../guides/index.html">Task guides</a></li><li aria-current="page">Extract requirements in the authors&#x27; own words</li></ol></nav>
   <header class="page-head"><div class="wrap page-head-row"><div><p class="eyebrow">Task guide · Business analysis</p><h1>Extract requirements in the authors&#x27; own words</h1><p class="use-when"><strong>Use this when</strong> someone hands you notes, emails, or documents and asks what the requirements are.</p><div class="boundary"><p><strong>You are listing candidate requirements with their sources, not deciding what gets built.</strong> Keeping the authors&#x27; words is the point. Paraphrase is where requirements quietly change meaning.</p></div><dl class="meta-strip"><div><dt>You'll create</dt><dd>a traced list of candidate requirements</dd></div><div><dt>Time</dt><dd>30 to 60 minutes</dd></div><div><dt>You'll need</dt><dd>the permitted sources and a one-line statement of scope</dd></div><div><dt>Environment</dt><dd>Approved browser/document environment</dd></div><div><dt>Workflow risk</dt><dd>low<span class="meta-caption">Review level, not data permission.</span></dd></div></dl><p class="risk-note">Workflow risk assumes permitted information in an approved environment. Data sensitivity, consequential actions, and organizational policy may require stronger controls and always override this label.</p></div></div></header>
-  <div class="wrap guide"><aside class="rail" aria-label="Guide overview"><section class="rail-card rail-how" aria-labelledby="rail-how"><h2 id="rail-how">How this guide works</h2><p>The page has two layers. Complete the task first; then apply the review and authority checks before the work goes anywhere.</p><ol class="rail-steps"><li>Do the work step by step</li><li>Review claims and framing</li><li>Confirm boundaries and save</li></ol></section><section class="rail-card" aria-labelledby="rail-before"><h2 id="rail-before">Before you start</h2><ul class="rail-checks"><li>Confirm the environment is approved for this work.</li><li>Replace personal, customer, payroll, or credential details.</li><li>Keep source names and locations so claims can be checked.</li></ul></section><nav class="rail-card" aria-labelledby="rail-toc"><h2 id="rail-toc">On this page</h2><ul class="rail-toc"><li><a href="#start-with-these-six-steps">Start with these six steps</a></li><li><a href="#use-this-list-shape">Use this list shape</a></li><li><a href="#review-preserve-and-know-when-to-stop">Review, preserve, and know when to stop</a></li><li><a href="#what-a-useful-exchange-looks-like">What a useful exchange looks like</a></li><li><a href="#boundaries-to-confirm-before-starting">Boundaries to confirm before starting</a></li></ul></nav><section class="rail-card" aria-labelledby="rail-key"><h2 id="rail-key">The key distinction</h2><p><strong>Candidate:</strong> a statement lifted from a source, quoted exactly, that might be a requirement.</p><p><strong>Requirement:</strong> a candidate you have decided to keep. This guide produces candidates and records your keep-or-strike decisions.</p></section></aside><div class="guide-main prose"><h2 class="part" data-part="Part 1 · Do the work" id="start-with-these-six-steps">Start with these six steps</h2>
-<p>The assistant reads everything and quotes exactly. You set the scope, define what counts as a requirement here, and make every keep-or-strike call.</p>
+  <div class="wrap guide"><aside class="rail" aria-label="Guide overview"><section class="rail-card rail-how" aria-labelledby="rail-how"><h2 id="rail-how">How this guide works</h2><p>The page has two layers. Complete the task first; then apply the review and authority checks before the work goes anywhere.</p><ol class="rail-steps"><li>Do the work step by step</li><li>Review claims and framing</li><li>Confirm boundaries and save</li></ol></section><section class="rail-card" aria-labelledby="rail-before"><h2 id="rail-before">Before you start</h2><ul class="rail-checks"><li>Confirm the environment is approved for this work.</li><li>Replace personal, customer, payroll, or credential details.</li><li>Keep source names and locations so claims can be checked.</li></ul></section><nav class="rail-card rail-late" aria-labelledby="rail-toc"><h2 id="rail-toc">On this page</h2><ul class="rail-toc"><li><a href="#start-with-these-six-steps">Start with these six steps</a></li><li><a href="#use-this-list-shape">Use this list shape</a></li><li><a href="#review-preserve-and-know-when-to-stop">Review, preserve, and know when to stop</a></li><li><a href="#what-a-useful-exchange-looks-like">What a useful exchange looks like</a></li><li><a href="#boundaries-to-confirm-before-starting">Boundaries to confirm before starting</a></li></ul></nav><section class="rail-card rail-late" aria-labelledby="rail-key"><h2 id="rail-key">The key distinction</h2><p><strong>Candidate:</strong> a statement lifted from a source, quoted exactly, that might be a requirement.</p><p><strong>Accepted requirement:</strong> a candidate an authorized requirement owner has approved. This guide produces candidates and proposed dispositions; it records, but does not make, the acceptance decision.</p></section></aside><div class="guide-main prose"><h2 class="part" data-part="Part 1 · Do the work" id="start-with-these-six-steps">Start with these six steps</h2>
+<p>The assistant reads everything and quotes exactly. You set the scope, define what counts as a requirement here, and review every proposed disposition. Acceptance stays with the requirement owner, who may or may not be you.</p>
 <div class="flow">
 <ol>
 <li><strong>Gather the permitted sources</strong>
@@ -40,8 +40,8 @@
    Every candidate with the exact sentence it came from, quoted, and the source and location named. No paraphrase of the requirement text.</li>
 <li><strong>Ask it to group and flag</strong>
    Group by theme. Flag duplicates and near-duplicates across sources, candidates that are wishes, constraints, or assumptions rather than requirements, and places where two sources conflict.</li>
-<li><strong>Decide keep or strike, and settle the conflicts</strong>
-   The assistant proposes; you strike and keep. Resolve each conflict or assign it to the person who can. Part 2 below has the checks.</li>
+<li><strong>Recommend retain, exclude, or ask, then route the decision</strong>
+   The assistant proposes classifications and dispositions. You review them and, where you hold the authority, decide; otherwise route each acceptance or conflict to the requirement owner. Record who decided and why. Part 2 below has the checks.</li>
 <li><strong>Save the list with its quotes</strong>
    The version with the quoted sentences is the record. A later specification will cite it. Part 2 says what else the record holds.</li>
 </ol>
@@ -49,10 +49,10 @@
 <div class="admonition starter">
 <p class="admonition-title">Starter instruction</p>
 <p>Copy this as your first message and fill in the scope.</p>
-<pre><code>Help me extract candidate requirements from these sources for [scope]. For each candidate, quote the exact sentence it comes from and name the source and its location. Group the candidates by theme. Flag duplicates, and flag anything that is a wish, a constraint, or an assumption rather than a requirement. List every place where two sources conflict. Do not paraphrase the requirement text.
+<pre><code>Help me extract candidate requirements from these sources for [scope]. For each candidate, quote the exact sentence it comes from and name the source and its location. Group the candidates by theme. Flag duplicates, and flag anything that is a wish, a constraint, or an assumption rather than a requirement. List every place where two sources conflict. Do not paraphrase the requirement text. For each candidate, propose a disposition (retain as a candidate, exclude, or refer for acceptance) with the reason; do not mark anything as accepted.
 </code></pre>
 </div>
-<h2 class="part" data-part="The deliverable" id="use-this-list-shape">Use this list shape</h2>
+</div><aside class="rail-inline" aria-label="Guide overview, continued"><nav class="rail-card rail-late" aria-labelledby="rail-toc-b"><h2 id="rail-toc-b">On this page</h2><ul class="rail-toc"><li><a href="#start-with-these-six-steps">Start with these six steps</a></li><li><a href="#use-this-list-shape">Use this list shape</a></li><li><a href="#review-preserve-and-know-when-to-stop">Review, preserve, and know when to stop</a></li><li><a href="#what-a-useful-exchange-looks-like">What a useful exchange looks like</a></li><li><a href="#boundaries-to-confirm-before-starting">Boundaries to confirm before starting</a></li></ul></nav><section class="rail-card rail-late" aria-labelledby="rail-key-b"><h2 id="rail-key-b">The key distinction</h2><p><strong>Candidate:</strong> a statement lifted from a source, quoted exactly, that might be a requirement.</p><p><strong>Accepted requirement:</strong> a candidate an authorized requirement owner has approved. This guide produces candidates and proposed dispositions; it records, but does not make, the acceptance decision.</p></section></aside><div class="guide-main prose"><h2 class="part" data-part="The deliverable" id="use-this-list-shape">Use this list shape</h2>
 <p>One row per candidate. If a column cannot be filled from the sources, leave it visible and mark it Open.</p>
 <div class="shape">
 <ol>
@@ -61,7 +61,7 @@
 <li><strong>Source and location</strong> Which document, and where in it.</li>
 <li><strong>Theme</strong> The group it belongs to.</li>
 <li><strong>Flag</strong> Duplicate, wish, constraint, assumption, or conflict, with the reason.</li>
-<li><strong>Your decision</strong> Keep, strike, or ask, with the reason.</li>
+<li><strong>Disposition</strong> Retain as a candidate, exclude from the candidate list, or refer for acceptance, with the reason and the decision owner.</li>
 </ol>
 </div>
 <h2 class="part" data-part="Part 2 · Govern the work" id="review-preserve-and-know-when-to-stop">Review, preserve, and know when to stop</h2>
@@ -70,7 +70,7 @@
 <div class="govern-card">
 <h3 id="what-you-decide">What you decide</h3>
 <ul>
-<li>Which candidates are requirements and which are not.</li>
+<li>Each candidate&rsquo;s proposed disposition: retain, exclude, or refer. Where you hold requirement authority, the acceptance itself; otherwise, who it is routed to.</li>
 <li>How each conflict between sources is resolved, or who to ask.</li>
 <li>Whether tightened wording still says what the author meant. When in doubt, keep the quote and add your gloss beside it.</li>
 </ul>
@@ -87,7 +87,7 @@
 <h3 id="keep-in-the-record">Keep in the record</h3>
 <ul>
 <li>The traced list, with the quotes.</li>
-<li>The strike decisions and why.</li>
+<li>Each disposition, who decided it, and why.</li>
 <li>The conflicts and who is resolving each.</li>
 </ul>
 </div>
@@ -108,9 +108,9 @@
 <dt>The assistant returns</dt>
 <dd>Fourteen candidates, each quoted with its location, grouped in four themes. Three flagged as wishes (&ldquo;should feel effortless&rdquo;). One conflict: the process document says acknowledgment within one business day; the March email says same day.</dd>
 <dt>You correct</dt>
-<dd>Two of the &ldquo;wishes&rdquo; are constraints from the compliance note that the assistant read as preferences. You relabel them and keep them.</dd>
+<dd>Two of the &ldquo;wishes&rdquo; are constraints from the compliance note that the assistant read as preferences. You relabel them and retain them as candidates.</dd>
 <dt>You keep</dt>
-<dd>The traced list with the quotes, the strike reasons, and the conflict assigned to the operations lead.</dd>
+<dd>The traced list with the quotes, each disposition with its reason and owner, and the conflict assigned to the operations lead.</dd>
 </dl>
 </div>
 <h2 class="part" data-part="Authority" id="boundaries-to-confirm-before-starting">Boundaries to confirm before starting</h2>
@@ -129,7 +129,11 @@
 </tr>
 <tr>
 <td>You review</td>
-<td>every keep-or-strike; every conflict resolution; the wording of anything tightened</td>
+<td>every proposed disposition; every conflict resolution; the wording of anything tightened</td>
+</tr>
+<tr>
+<td>An authorized requirement owner decides</td>
+<td>which candidates become accepted requirements, and how substantive conflicts are resolved</td>
 </tr>
 <tr>
 <td>An authorized decision-maker decides</td>

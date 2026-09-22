@@ -15,11 +15,11 @@ environment: browser
 environment_label: Approved browser/document environment
 risk: low
 key_a: Candidate: a statement lifted from a source, quoted exactly, that might be a requirement.
-key_b: Requirement: a candidate you have decided to keep. This guide produces candidates and records your keep-or-strike decisions.
+key_b: Accepted requirement: a candidate an authorized requirement owner has approved. This guide produces candidates and proposed dispositions; it records, but does not make, the acceptance decision.
 ---
 ## Start with these six steps {: .part data-part="Part 1 · Do the work" }
 
-The assistant reads everything and quotes exactly. You set the scope, define what counts as a requirement here, and make every keep-or-strike call.
+The assistant reads everything and quotes exactly. You set the scope, define what counts as a requirement here, and review every proposed disposition. Acceptance stays with the requirement owner, who may or may not be you.
 
 <div class="flow" markdown="1">
 
@@ -31,8 +31,8 @@ The assistant reads everything and quotes exactly. You set the scope, define wha
    Every candidate with the exact sentence it came from, quoted, and the source and location named. No paraphrase of the requirement text.
 4. **Ask it to group and flag**
    Group by theme. Flag duplicates and near-duplicates across sources, candidates that are wishes, constraints, or assumptions rather than requirements, and places where two sources conflict.
-5. **Decide keep or strike, and settle the conflicts**
-   The assistant proposes; you strike and keep. Resolve each conflict or assign it to the person who can. Part 2 below has the checks.
+5. **Recommend retain, exclude, or ask, then route the decision**
+   The assistant proposes classifications and dispositions. You review them and, where you hold the authority, decide; otherwise route each acceptance or conflict to the requirement owner. Record who decided and why. Part 2 below has the checks.
 6. **Save the list with its quotes**
    The version with the quoted sentences is the record. A later specification will cite it. Part 2 says what else the record holds.
 
@@ -41,7 +41,7 @@ The assistant reads everything and quotes exactly. You set the scope, define wha
 !!! starter "Starter instruction"
     Copy this as your first message and fill in the scope.
 
-        Help me extract candidate requirements from these sources for [scope]. For each candidate, quote the exact sentence it comes from and name the source and its location. Group the candidates by theme. Flag duplicates, and flag anything that is a wish, a constraint, or an assumption rather than a requirement. List every place where two sources conflict. Do not paraphrase the requirement text.
+        Help me extract candidate requirements from these sources for [scope]. For each candidate, quote the exact sentence it comes from and name the source and its location. Group the candidates by theme. Flag duplicates, and flag anything that is a wish, a constraint, or an assumption rather than a requirement. List every place where two sources conflict. Do not paraphrase the requirement text. For each candidate, propose a disposition (retain as a candidate, exclude, or refer for acceptance) with the reason; do not mark anything as accepted.
 
 ## Use this list shape {: .part data-part="The deliverable" }
 
@@ -54,7 +54,7 @@ One row per candidate. If a column cannot be filled from the sources, leave it v
 3. **Source and location** Which document, and where in it.
 4. **Theme** The group it belongs to.
 5. **Flag** Duplicate, wish, constraint, assumption, or conflict, with the reason.
-6. **Your decision** Keep, strike, or ask, with the reason.
+6. **Disposition** Retain as a candidate, exclude from the candidate list, or refer for acceptance, with the reason and the decision owner.
 
 </div>
 
@@ -68,7 +68,7 @@ These are not more drafting steps. They are the checks that make the list safe t
 
 ### What you decide
 
-- Which candidates are requirements and which are not.
+- Each candidate's proposed disposition: retain, exclude, or refer. Where you hold requirement authority, the acceptance itself; otherwise, who it is routed to.
 - How each conflict between sources is resolved, or who to ask.
 - Whether tightened wording still says what the author meant. When in doubt, keep the quote and add your gloss beside it.
 
@@ -89,7 +89,7 @@ These are not more drafting steps. They are the checks that make the list safe t
 ### Keep in the record
 
 - The traced list, with the quotes.
-- The strike decisions and why.
+- Each disposition, who decided it, and why.
 - The conflicts and who is resolving each.
 
 </div>
@@ -117,10 +117,10 @@ The assistant returns
 :   Fourteen candidates, each quoted with its location, grouped in four themes. Three flagged as wishes ("should feel effortless"). One conflict: the process document says acknowledgment within one business day; the March email says same day.
 
 You correct
-:   Two of the "wishes" are constraints from the compliance note that the assistant read as preferences. You relabel them and keep them.
+:   Two of the "wishes" are constraints from the compliance note that the assistant read as preferences. You relabel them and retain them as candidates.
 
 You keep
-:   The traced list with the quotes, the strike reasons, and the conflict assigned to the operations lead.
+:   The traced list with the quotes, each disposition with its reason and owner, and the conflict assigned to the operations lead.
 
 </div>
 
@@ -132,7 +132,8 @@ You keep
 | Once you have approved the boundary | In this task |
 | --- | --- |
 | The assistant may | read the permitted sources; lift and quote candidates; group them; flag conflicts and non-requirements |
-| You review | every keep-or-strike; every conflict resolution; the wording of anything tightened |
+| You review | every proposed disposition; every conflict resolution; the wording of anything tightened |
+| An authorized requirement owner decides | which candidates become accepted requirements, and how substantive conflicts are resolved |
 | An authorized decision-maker decides | any candidate that is itself a policy, purchase, or staffing decision |
 | Stop and escalate | when sources hold restricted data, or are too thin to support the list |
 
