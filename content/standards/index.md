@@ -40,6 +40,8 @@ Work produced with an assistant is work product of the organization and follows 
 
 Human and AI contributions are credited to their actual authors where the work product warrants authorship. "AI-assisted" is not used to flatten distinct contributions. Quotations and stories preserve their source and require the consent of every person and AI system involved.
 
+**Consent.** No person and no AI system becomes a story on this portal by default. Each member of a working team, the person and the AI, consents separately to being quoted, named, or written about, and can decline or withdraw without affecting participation. Until a consented story exists, there is no story on the portal, and no placeholder pretending to be one.
+
 ## Common failure and recovery patterns
 
 - **The confident wrong claim.** Ask for the source; label it Open; correct; record. Ordinary.

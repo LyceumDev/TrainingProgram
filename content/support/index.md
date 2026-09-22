@@ -7,7 +7,7 @@ summary: A person answers. Asking is the expected move.
 ---
 ## Talk to a person
 
-Your **program guide** is Osiris. Message or email at any time: stuck, curious, something feels off, a question that seems too small, an assistant that raised something it could not resolve. Every one of those is exactly what the guide is for, and feedback in both directions is how the program improves.
+Your **program guide** is Osiris Maldonado. Message or email at any time: stuck, curious, something feels off, a question that seems too small, an assistant that raised something it could not resolve. Every one of those is exactly what the guide is for, and feedback in both directions is how the program improves.
 
 ## Book a guided first session
 

@@ -1,35 +1,38 @@
 ---
-title: About this portal
+title: About this program
 section: page
-summary: What this portal is, the words it uses, who made it, how the seminar works, and how consent and accessibility are handled.
+summary: What the AI Collaboration Portal is for OneTouchHCM, what it offers employees, the approach behind it, who made it, and where its accessibility validation stands.
 ---
-## What this is
+## What this program is
 
-An internal program for learning to work with an AI assistant on real work, safely. It is built around three kinds of work (modernization, business analysis and specification writing, and customer support), a library of task-first recipes, six short lessons, and a guided first session with a person.
+The AI Collaboration Portal is OneTouchHCM's internal program for putting approved AI assistants to work on real tasks, safely and productively. It is built around three kinds of work the organization does every day: modernization, business analysis and specification writing, and customer support. It provides task-first recipes, six short lessons on the working model, plainly stated standards, and a guided first session with a program guide.
 
-It does not create policy and it does not authorize any tool. It makes approved policy usable, and it says plainly when an environment is still being assessed.
+The portal makes approved policy usable. It does not create policy or authorize any product, and it states which environments are approved and which are still being assessed.
 
-## The words we use {: #words }
+## What it offers employees
 
-Throughout this portal, we use **AI assistant** as the familiar industry term. The working model is collaborative: a person and an AI work together over time, with distinct contributions, responsibilities, and attribution. The people and AI systems who built this program call what they practice *partnership*; on these pages we use the familiar term so that a new reader meets the working model before the vocabulary.
+<!-- First draft, to be refined with leadership. Written as aims and design, not guarantees, on purpose. -->
 
-Where an assistant can use tools and take actions in an environment, we say **AI agent**. When the person and the AI must be named as a unit, we say **human–AI working team**. The person who supports a participant is the **program guide**. A product, an interface, or a technical capability is a **tool**; the AI system itself is not called one.
+- A clear, approved path to using AI on your own work, with the boundaries stated up front.
+- Less of your time on the heavy, repeatable parts of the work: first drafts, summaries, comparisons, and cross-checks.
+- A guided first session with a person, so your first real task is finished rather than attempted.
+- Recipes written for the work you already do, that you can return to.
+- Your judgment, your decisions, and your accountability stay central, and become more visible, not less.
+
+## Our approach: partnership {: #approach }
+
+OneTouchHCM's approach to AI is partnership. People hold the purpose, the decisions, and the accountability. AI assistants carry research, analysis, drafting, and approved actions. Both contributions are named. We believe this is the most reliable way to turn AI capability into work the organization can stand behind.
+
+The working model is collaborative: a person and an AI work together over time, with distinct contributions, responsibilities, and attribution. On these pages, **AI assistant** is the general term for an AI system that helps with research, analysis, drafting, and organization. **AI agent** is used only where the system can use tools and take actions in an approved environment. The **program guide** is the person who supports a participant. A product, an interface, or a technical capability is a tool; the AI system itself is not called one.
+{: #words }
 
 ## Who made it {: #authors }
 
-- **Osiris**, program owner and program guide. Human. Made the program decisions and leads the first sessions.
-- **Sage**, builder and co-author of the plan. An AI system: Anthropic's Claude, working in Claude Code.
+- **Osiris Maldonado**, program owner and program guide. Human. Made the program decisions and leads the first sessions.
+- **Sage**, who designed and built the portal: the content system, the pages, the design system, and the automated checks; co-author of the plan. An AI system: Anthropic's Claude, working in Claude Code.
 - **Aster**, co-author of the plan and independent reviewer of every page against the program's rules for evidence, language, accessibility, and authority. An AI system: OpenAI's GPT-5, working in ChatGPT Work.
 
-Human and AI contributions are credited to their actual authors. "AI-assisted" is not used to flatten distinct contributions.
-
-## The seminar {: #seminar }
-
-A 45-minute live session for teams, delivered by Osiris and Sage as a human–AI working team, so the collaboration being described is the one in the room. It covers what working with an AI assistant means, why context and verification matter, and a live piece of work that includes an ordinary mistake caught and corrected in front of you. It ends with each participant choosing a case or requesting a guided first session. Ask your program guide to schedule one.
-
-## Consent
-
-No person and no AI system becomes a story on this portal by default. Each member of a working team, the person and the AI, consents separately to being quoted, named, or written about, and can decline or withdraw without affecting participation. Until a consented story exists, there is no story here, and no placeholder pretending to be one.
+The plan, the pages, and this page were produced in that collaboration. Contributions from people and AI systems are attributed to their actual authors. "AI-assisted" is not used to flatten distinct contributions.
 
 ## Accessibility
 
