@@ -1,0 +1,170 @@
+[
+ {
+  "title": "About this portal",
+  "url": "about.html",
+  "section": "page",
+  "summary": "What this portal is, the words it uses, who made it, how the seminar works, and how consent and accessibility are handled."
+ },
+ {
+  "title": "Business analysis and specification writing",
+  "url": "cases/business-analysis.html",
+  "section": "case",
+  "summary": "Requirements, specifications, research, comparisons, memos, decision records, and traceability. The first complete case, because everyone does some of it."
+ },
+ {
+  "title": "Customer support",
+  "url": "cases/customer-support.html",
+  "section": "case",
+  "summary": "Intake, triage, response, escalation, and follow-up, and, when it is ready, workflows assisted by the organization's integrated support system."
+ },
+ {
+  "title": "Cases",
+  "url": "cases/index.html",
+  "section": "case",
+  "summary": "Three entrances, one working model. Find the case that looks like your week."
+ },
+ {
+  "title": "Modernization work",
+  "url": "cases/modernization.html",
+  "section": "case",
+  "summary": "Repository analysis, design, coding, review, documentation, and coordination with a development team, including work directed by a person who does not write code."
+ },
+ {
+  "title": "Environments",
+  "url": "environments/index.html",
+  "section": "environment",
+  "summary": "Where the assistant will work. Setup branches by the approved place, not by whether you are technical. Not sure is a complete answer."
+ },
+ {
+  "title": "Home",
+  "url": "index.html",
+  "section": "home",
+  "summary": "Learn what an AI assistant is, see how working with one applies to your own work, and begin a real task with the right support."
+ },
+ {
+  "title": "For leaders",
+  "url": "leaders/index.html",
+  "section": "page",
+  "summary": "What a human\u2013AI working team is, what it can produce, what you must provide or decide, and what evidence would justify scaling."
+ },
+ {
+  "title": "Meet the working model",
+  "url": "lessons/01-meet-the-working-model.html",
+  "section": "lesson",
+  "summary": "What an AI assistant is, what you bring, what it can carry, and what stays yours."
+ },
+ {
+  "title": "Context, continuity, and the durable record",
+  "url": "lessons/02-context-continuity-and-the-record.html",
+  "section": "lesson",
+  "summary": "Why context changes results, the difference between a product's memory and your project's record, and how work resumes tomorrow."
+ },
+ {
+  "title": "Confident errors and verification",
+  "url": "lessons/03-confident-errors-and-verification.html",
+  "section": "lesson",
+  "summary": "Why fluent output can still be wrong, how to ask for a source, and the four labels every piece of work uses."
+ },
+ {
+  "title": "Agentic work and authority",
+  "url": "lessons/04-agentic-work-and-authority.html",
+  "section": "lesson",
+  "summary": "What tools and actions are, why being able to act is not permission to act, and how boundaries and approvals work."
+ },
+ {
+  "title": "Safety and organizational data",
+  "url": "lessons/05-safety-and-organizational-data.html",
+  "section": "lesson",
+  "summary": "Approved environments, what information is allowed, credentials, sensitive data, records, and how to escalate."
+ },
+ {
+  "title": "Begin real work",
+  "url": "lessons/06-begin-real-work.html",
+  "section": "lesson",
+  "summary": "Choose a case, find a recipe, pick an environment if you know it, and book a guided first session."
+ },
+ {
+  "title": "The six lessons",
+  "url": "lessons/index.html",
+  "section": "lesson",
+  "summary": "The plain-language foundation on AI and agentic collaboration. Read them in order the first time; come back to any one of them any time."
+ },
+ {
+  "title": "Turn a rough request into a structured problem statement",
+  "url": "recipes/01-turn-a-rough-request-into-a-problem-statement.html",
+  "section": "recipe",
+  "summary": "From a forwarded email and a few attachments to a one-page statement of the problem, who has it, what is known, and what is not."
+ },
+ {
+  "title": "Extract requirements while preserving source language",
+  "url": "recipes/02-extract-requirements-preserving-source-language.html",
+  "section": "recipe",
+  "summary": "Lift every candidate requirement out of the sources, each with the exact sentence it came from, so nothing is invented and nothing is lost."
+ },
+ {
+  "title": "Separate verified facts, inferences, decisions, and open questions",
+  "url": "recipes/03-separate-facts-inferences-decisions-and-open-questions.html",
+  "section": "recipe",
+  "summary": "Take any document, draft, or thread and sort every claim into the four labels, so the reader knows exactly what stands on what."
+ },
+ {
+  "title": "Compare options against explicit criteria",
+  "url": "recipes/04-compare-options-against-explicit-criteria.html",
+  "section": "recipe",
+  "summary": "Set the criteria first, then let the assistant build the comparison, so the recommendation follows from the criteria and not the other way round."
+ },
+ {
+  "title": "Draft a specification with traceability to sources",
+  "url": "recipes/05-draft-a-specification-with-traceability.html",
+  "section": "recipe",
+  "summary": "Turn a traced requirements list and the decisions made about it into a specification where every statement can be followed back to its origin."
+ },
+ {
+  "title": "Review a memo for unsupported claims, ambiguity, and missing decisions",
+  "url": "recipes/06-review-a-memo-for-unsupported-claims.html",
+  "section": "recipe",
+  "summary": "Before a memo goes to people who will act on it, have the assistant read it the way a skeptical reader will."
+ },
+ {
+  "title": "Recipes",
+  "url": "recipes/index.html",
+  "section": "recipe",
+  "summary": "Task-first, one-page guides. This is the part of the portal you will come back to."
+ },
+ {
+  "title": "The environment-readiness standard",
+  "url": "standards/environment-readiness.html",
+  "section": "page",
+  "summary": "What an environment must satisfy, or explicitly disposition, before it is presented here as an approved place for an AI assistant to work."
+ },
+ {
+  "title": "Standards and safety",
+  "url": "standards/index.html",
+  "section": "page",
+  "summary": "The rules for working with an AI assistant here, written plainly. This page makes approved policy usable; it does not create policy or authorize a tool."
+ },
+ {
+  "title": "Frequently asked questions",
+  "url": "support/faq.html",
+  "section": "support",
+  "summary": "Short, honest answers to the questions people actually ask."
+ },
+ {
+  "title": "I don't know yet",
+  "url": "support/i-dont-know-yet.html",
+  "section": "support",
+  "summary": "The most common answer, and a complete one. A person chooses the environment with you."
+ },
+ {
+  "title": "Support",
+  "url": "support/index.html",
+  "section": "support",
+  "summary": "A person answers. Asking is the expected move."
+ },
+ {
+  "title": "Request a guided first session",
+  "url": "support/request-a-guided-session.html",
+  "section": "support",
+  "summary": "One real task, one hour, a guide beside you and the assistant. The aim is finished work and a record you can resume from."
+ }
+]

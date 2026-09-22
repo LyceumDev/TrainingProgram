@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Business analysis and specification writing · AI Collaboration Portal</title>
+<meta name="description" content="Requirements, specifications, research, comparisons, memos, decision records, and traceability. The first complete case, because everyone does some of it.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/styles.css">
+<script>(function(){try{var t=localStorage.getItem('portal-theme');if(t==='dark'){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}document.documentElement.classList.add('js');})();</script>
+</head>
+<body class="section-case">
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="site-head">
+  <div class="wrap site-head-row">
+    <a class="brand" href="../index.html"><svg class="brandmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="12" cy="17" r="10" style="fill:var(--warm)"/><rect x="13" y="5" width="16" height="20" rx="6" style="fill:var(--accent);opacity:.92"/></svg><span class="brand-name">AI Collaboration Portal</span></a>
+    <nav id="site-nav" class="site-nav" aria-label="Primary"><ul><li><a href="../index.html">Home</a></li><li><a href="../cases/index.html" aria-current="page">Cases</a></li><li><a href="../recipes/index.html">Recipes</a></li><li><a href="../lessons/index.html">Lessons</a></li><li><a href="../environments/index.html">Environments</a></li><li><a href="../support/index.html">Support</a></li></ul></nav>
+    <button class="theme-toggle" type="button" aria-pressed="false"><span class="theme-toggle-dot" aria-hidden="true"></span>Dark theme</button>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>Menu
+    </button>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+  <nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../index.html">Home</a></li><li><a href="../cases/index.html">Cases</a></li><li aria-current="page">Business analysis and specification writing</li></ol></nav>
+  <header class="page-head"><div class="wrap page-head-row"><div><h1>Business analysis and specification writing</h1><p class="lede">Requirements, specifications, research, comparisons, memos, decision records, and traceability. The first complete case, because everyone does some of it.</p></div><div class=head-art-wrap aria-hidden=true><svg class="head-art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><rect x="40" y="14" width="86" height="96" rx="10" style="fill:var(--paper-3)"/><path d="M58 38 H108 M58 56 H100 M58 74 H88"/><circle cx="146" cy="84" r="24" fill="currentColor" stroke="none"/><path d="M134 84 l8 8 l16 -18" stroke="#fff"/><circle cx="24" cy="96" r="5" fill="currentColor" stroke="none"/></svg></div></div></header>
+  <div class="wrap prose"><h2 id="what-working-with-an-assistant-looks-like-in-this-work">What working with an assistant looks like in this work</h2>
+<p>Business analysis is the work of turning what people say they need into something the organization can act on: a problem statement, a set of requirements, a comparison, a specification, a decision. Most of it is reading, structuring, cross-checking, and writing. An AI assistant is very good at the reading, structuring, and cross-checking. You are the one who knows which stakeholder meant what, which constraint is real, and what the organization is actually willing to decide.</p>
+<p>The division that works: you supply the purpose, the sources, and the judgment; the assistant produces structure and drafts fast, labels what it could and could not verify, and asks when the sources disagree.</p>
+<h2 id="a-realistic-day">A realistic day</h2>
+<p>Tuesday morning. A manager forwards a two-paragraph email asking for &ldquo;a better way to handle the intake backlog,&rdquo; plus a spreadsheet and last year&rsquo;s process document.</p>
+<ol>
+<li>You open the project record for this request, add the three sources, and write the purpose in two sentences.</li>
+<li>With the <a href="../recipes/01-turn-a-rough-request-into-a-problem-statement.html">problem statement recipe</a>, the assistant drafts a structured statement from the email and the documents. Two claims come back labeled Open, because nothing in the sources supports them. You call the manager; one is confirmed, one was a guess. The record gets both.</li>
+<li>With the <a href="../recipes/02-extract-requirements-preserving-source-language.html">requirements recipe</a>, the assistant lifts fourteen candidate requirements, each with the sentence it came from. You strike three that were wishes, not requirements.</li>
+<li>By lunch you have a one-page problem statement and a traced requirements list, both with sources, to take to Thursday&rsquo;s meeting. The record is updated: what was decided, what is open, who owns the next step.</li>
+</ol>
+<p>The workflow itself depends on no particular product. Using it with organizational material still depends on an approved environment, or on the guide&rsquo;s approved environment during the recorded interim. Beyond that, it took the documents and an hour.</p>
+<h2 id="the-first-three-recipes-to-try">The first three recipes to try</h2>
+<ol>
+<li><a href="../recipes/01-turn-a-rough-request-into-a-problem-statement.html">Turn a rough request into a structured problem statement</a></li>
+<li><a href="../recipes/02-extract-requirements-preserving-source-language.html">Extract requirements while preserving source language</a></li>
+<li><a href="../recipes/03-separate-facts-inferences-decisions-and-open-questions.html">Separate verified facts, inferences, decisions, and open questions</a></li>
+</ol>
+<p>Then: <a href="../recipes/04-compare-options-against-explicit-criteria.html">compare options against explicit criteria</a>, <a href="../recipes/05-draft-a-specification-with-traceability.html">draft a specification with traceability</a>, and <a href="../recipes/06-review-a-memo-for-unsupported-claims.html">review a memo for unsupported claims</a>.</p><div class="grid grid-2 recipes" id="recipe-grid"><a class="card card-recipe" href="../recipes/01-turn-a-rough-request-into-a-problem-statement.html" data-case="business-analysis" data-environment="browser" data-risk="low"><span class="eyebrow">Business analysis</span><h3 class="card-title">Turn a rough request into a structured problem statement</h3><p class="card-text">From a forwarded email and a few attachments to a one-page statement of the problem, who has it, what is known, and what is not.</p><dl class="card-meta"><div><dt>Outcome</dt><dd>a one-page problem statement</dd></div><div><dt>Environment</dt><dd>Approved browser/document environment</dd></div><div><dt>Workflow risk</dt><dd>low</dd></div></dl></a><a class="card card-recipe" href="../recipes/02-extract-requirements-preserving-source-language.html" data-case="business-analysis" data-environment="browser" data-risk="low"><span class="eyebrow">Business analysis</span><h3 class="card-title">Extract requirements while preserving source language</h3><p class="card-text">Lift every candidate requirement out of the sources, each with the exact sentence it came from, so nothing is invented and nothing is lost.</p><dl class="card-meta"><div><dt>Outcome</dt><dd>a traced list of candidate requirements</dd></div><div><dt>Environment</dt><dd>Approved browser/document environment</dd></div><div><dt>Workflow risk</dt><dd>low</dd></div></dl></a><a class="card card-recipe" href="../recipes/03-separate-facts-inferences-decisions-and-open-questions.html" data-case="business-analysis" data-environment="browser" data-risk="low"><span class="eyebrow">Business analysis</span><h3 class="card-title">Separate verified facts, inferences, decisions, and open questions</h3><p class="card-text">Take any document, draft, or thread and sort every claim into the four labels, so the reader knows exactly what stands on what.</p><dl class="card-meta"><div><dt>Outcome</dt><dd>a labeled version of the document</dd></div><div><dt>Environment</dt><dd>Approved browser/document environment</dd></div><div><dt>Workflow risk</dt><dd>low</dd></div></dl></a><a class="card card-recipe" href="../recipes/04-compare-options-against-explicit-criteria.html" data-case="business-analysis" data-environment="browser" data-risk="medium"><span class="eyebrow">Business analysis</span><h3 class="card-title">Compare options against explicit criteria</h3><p class="card-text">Set the criteria first, then let the assistant build the comparison, so the recommendation follows from the criteria and not the other way round.</p><dl class="card-meta"><div><dt>Outcome</dt><dd>a comparison table with a sourced recommendation</dd></div><div><dt>Environment</dt><dd>Approved browser/document environment</dd></div><div><dt>Workflow risk</dt><dd>medium</dd></div></dl></a><a class="card card-recipe" href="../recipes/05-draft-a-specification-with-traceability.html" data-case="business-analysis" data-environment="browser" data-risk="medium"><span class="eyebrow">Business analysis</span><h3 class="card-title">Draft a specification with traceability to sources</h3><p class="card-text">Turn a traced requirements list and the decisions made about it into a specification where every statement can be followed back to its origin.</p><dl class="card-meta"><div><dt>Outcome</dt><dd>a draft specification with a traceability table</dd></div><div><dt>Environment</dt><dd>Approved browser/document environment</dd></div><div><dt>Workflow risk</dt><dd>medium</dd></div></dl></a><a class="card card-recipe" href="../recipes/06-review-a-memo-for-unsupported-claims.html" data-case="business-analysis" data-environment="browser" data-risk="low"><span class="eyebrow">Business analysis</span><h3 class="card-title">Review a memo for unsupported claims, ambiguity, and missing decisions</h3><p class="card-text">Before a memo goes to people who will act on it, have the assistant read it the way a skeptical reader will.</p><dl class="card-meta"><div><dt>Outcome</dt><dd>a review note with specific, sourced findings</dd></div><div><dt>Environment</dt><dd>Approved browser/document environment</dd></div><div><dt>Workflow risk</dt><dd>low</dd></div></dl></a></div><p class="empty" id="recipe-empty" hidden>No recipe matches yet. Clear a filter, or <a href="../support/request-a-guided-session.html">ask for a guided first session</a> and we will write the recipe with you.</p><h2 id="environments-that-may-be-involved">Environments that may be involved</h2>
+<p>This case can begin in an <a href="../environments/index.html#browser">approved browser or document environment</a>. It does not need access to a code repository or an operational system. While no business-user environment is yet approved, a guided first session runs the work in the guide&rsquo;s approved environment, under the guide&rsquo;s hands, with non-sensitive material. That counts as a guided demonstration on your real work; your own onboarding begins when you have an approved environment you can resume from.</p>
+<h2 id="data-and-authority-boundaries">Data and authority boundaries</h2>
+<ul>
+<li><strong>Data.</strong> Analysis documents often contain names, amounts, and case details. The <a href="../lessons/05-safety-and-organizational-data.html">one absolute</a> applies: real customer, employee, and payroll information does not go into the conversation. Describe the kind of thing, use placeholders, and point with reference numbers.</li>
+<li><strong>Authority.</strong> In this case the assistant reads, drafts, and recommends. It does not decide scope, priority, or what the organization will build or buy. Every recipe on this page states its own authority section.</li>
+</ul>
+<h2 id="common-failure-and-recovery-moments">Common failure and recovery moments</h2>
+<ul>
+<li><strong>The confident summary.</strong> The assistant summarizes a policy document and one sentence is not in the document. You ask &ldquo;what is that based on?&rdquo; The assistant cannot point to a line. The sentence becomes Open, and the record notes it. Ordinary; no drama.</li>
+<li><strong>The wish dressed as a requirement.</strong> &ldquo;The system should be intuitive&rdquo; arrives as requirement seven. You send it back: intuitive to whom, doing what? It becomes an open question for the stakeholder, which is where it belonged.</li>
+<li><strong>Lost context on Thursday.</strong> You open the conversation and the assistant has nothing from Tuesday. You open the project record, and the context is there. That is the record doing its job.</li>
+</ul></div>
+  
+</main>
+
+<aside class="support-strip" aria-labelledby="support-strip-title">
+  <div class="wrap support-strip-row">
+    <div>
+      <h2 id="support-strip-title" class="support-strip-title">Stuck, unsure, or something feels off?</h2>
+      <p class="support-strip-text">Asking is the expected move. A person answers.</p>
+    </div>
+    <div class="support-strip-actions">
+      <a class="btn btn-primary" href="../support/request-a-guided-session.html">Book a guided first session</a>
+      <a class="btn btn-ghost" href="../support/index.html">Talk to a person</a>
+      <a class="btn btn-quiet" href="../support/index.html#urgent">Urgent: data, security, or an action concern</a>
+    </div>
+  </div>
+</aside>
+
+<footer class="site-foot">
+  <div class="wrap site-foot-row">
+    <p class="site-foot-brand">AI Collaboration Portal · an internal program · prototype</p>
+    <ul class="site-foot-links">
+      <li><a href="../standards/index.html">Standards and safety</a></li>
+      <li><a href="../standards/environment-readiness.html">Environment readiness</a></li>
+      <li><a href="../environments/index.html">Environments</a></li>
+      <li><a href="../leaders/index.html">For leaders</a></li>
+      <li><a href="../support/faq.html">FAQ</a></li>
+      <li><a href="../about.html">About this portal</a></li>
+    </ul>
+    <p class="site-foot-note">Written by Osiris and Sage, with Aster's independent review. Names, roles, and the words this portal uses are on the <a href="../about.html#authors">About page</a>. Nothing here is a testimonial unless the people in it agreed to it. © 2026</p>
+  </div>
+</footer>
+
+<script src="../assets/site.js" defer></script>
+</body>
+</html>

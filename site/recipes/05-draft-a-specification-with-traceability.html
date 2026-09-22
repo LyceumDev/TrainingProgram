@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Draft a specification with traceability to sources · AI Collaboration Portal</title>
+<meta name="description" content="Turn a traced requirements list and the decisions made about it into a specification where every statement can be followed back to its origin.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/styles.css">
+<script>(function(){try{var t=localStorage.getItem('portal-theme');if(t==='dark'){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}document.documentElement.classList.add('js');})();</script>
+</head>
+<body class="section-recipe">
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="site-head">
+  <div class="wrap site-head-row">
+    <a class="brand" href="../index.html"><svg class="brandmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="12" cy="17" r="10" style="fill:var(--warm)"/><rect x="13" y="5" width="16" height="20" rx="6" style="fill:var(--accent);opacity:.92"/></svg><span class="brand-name">AI Collaboration Portal</span></a>
+    <nav id="site-nav" class="site-nav" aria-label="Primary"><ul><li><a href="../index.html">Home</a></li><li><a href="../cases/index.html">Cases</a></li><li><a href="../recipes/index.html" aria-current="page">Recipes</a></li><li><a href="../lessons/index.html">Lessons</a></li><li><a href="../environments/index.html">Environments</a></li><li><a href="../support/index.html">Support</a></li></ul></nav>
+    <button class="theme-toggle" type="button" aria-pressed="false"><span class="theme-toggle-dot" aria-hidden="true"></span>Dark theme</button>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>Menu
+    </button>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+  <nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../index.html">Home</a></li><li><a href="../recipes/index.html">Recipes</a></li><li aria-current="page">Draft a specification with traceability to sources</li></ol></nav>
+  <header class="page-head"><div class="wrap page-head-row"><div><p class="eyebrow">Recipe · Business analysis</p><h1>Draft a specification with traceability to sources</h1><p class="lede">Turn a traced requirements list and the decisions made about it into a specification where every statement can be followed back to its origin.</p><dl class="meta-band"><div><dt>Outcome</dt><dd>a draft specification with a traceability table</dd></div><div><dt>Environment</dt><dd>Approved browser/document environment</dd></div><div><dt>Workflow risk</dt><dd>medium</dd></div><div><dt>Time</dt><dd>1 to 3 hours, in sittings</dd></div></dl><p class="risk-note">Workflow risk assumes permitted information in an approved environment. Data sensitivity, consequential actions, and organizational policy may require stronger controls and always override this label.</p></div></div></header>
+  <div class="wrap prose"><h2 id="what-you-are-trying-to-accomplish">What you are trying to accomplish</h2>
+<p>A specification a builder can build from and a reviewer can check: each requirement stated once, testably, with an identifier, and a table that follows every statement back to the source sentence and forward to the decision that accepted it. Traceability is what makes a specification defensible six months later when someone asks &ldquo;who said we needed this?&rdquo;</p>
+<h2 id="what-the-assistant-needs-from-you">What the assistant needs from you</h2>
+<ul>
+<li>The traced requirements list from <a href="../recipes/02-extract-requirements-preserving-source-language.html">recipe 2</a>, with your keep-or-strike decisions.</li>
+<li>The decisions made so far, with owners: scope, priorities, anything ruled out.</li>
+<li>The house template for specifications, if there is one, and an example the organization considers good.</li>
+<li>The intended readers: the people who will build, test, and approve.</li>
+</ul>
+<h2 id="what-the-assistant-can-carry">What the assistant can carry</h2>
+<ul>
+<li>A first full draft in the house shape, one requirement per statement, each with an identifier and a link back to its source sentence.</li>
+<li>The traceability table: identifier, statement, source, decision that accepted it, label.</li>
+<li>Consistency checks: statements that contradict each other, terms used two ways, requirements with no acceptance criterion.</li>
+<li>A list of everything that is still <span class="label label-open">Open</span>, grouped by who can close it.</li>
+</ul>
+<h2 id="what-you-decide-or-approve">What you decide or approve</h2>
+<ul>
+<li>Every requirement&rsquo;s final wording. The assistant may draft or propose changes. You review and approve the final text, remain accountable for its use, and preserve contribution provenance where material.</li>
+<li>Priority and scope calls, or who makes them.</li>
+<li>Whether the specification is ready for review, or whether the Open list is still too long to be honest about.</li>
+</ul>
+<h2 id="what-to-check-before-you-use-it">What to check before you use it</h2>
+<div class="admonition verify">
+<p class="admonition-title">Check before it leaves your hands</p>
+<ul>
+<li>Pick five requirements at random and follow each back through the table to its source sentence. All five must arrive.</li>
+<li>Search the draft for words that hide decisions: &ldquo;appropriate,&rdquo; &ldquo;as needed,&rdquo; &ldquo;intuitive,&rdquo; &ldquo;etc.&rdquo; Each one is either defined or turned into an Open item.</li>
+<li>Confirm that no requirement introduced during drafting lacks a source or a named decision. Drafting is where requirements get invented.</li>
+</ul>
+</div>
+<h2 id="what-to-keep-in-the-record">What to keep in the record</h2>
+<div class="admonition record">
+<p class="admonition-title">The record for this recipe</p>
+<p>The specification with its version, the traceability table, the Open list, and the review comments when they come. The table is the record; keep it beside the document, not inside a conversation.</p>
+</div>
+<h2 id="when-to-stop-and-ask">When to stop and ask</h2>
+<div class="admonition stop">
+<p class="admonition-title">Stop and ask when</p>
+<ul>
+<li>The specification would commit the organization to something no authorized person has decided. Mark it Open and raise it; do not let the document decide.</li>
+<li>It touches personal, customer, or payroll data flows. Specify the data classes and rules without pasting real examples, and involve Security early.</li>
+<li>Sources and decisions are missing for whole sections. That is a sign the analysis is not done, not a gap for the assistant to fill.</li>
+</ul>
+</div>
+<h2 id="authority-in-this-recipe">Authority in this recipe</h2>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>In this recipe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The assistant may, without asking</td>
+<td>draft; build the traceability table; run consistency checks; list Open items</td>
+</tr>
+<tr>
+<td>You review</td>
+<td>every requirement&rsquo;s wording; the table; readiness for review</td>
+</tr>
+<tr>
+<td>Needs an authorized decision-maker</td>
+<td>scope, priority, and any requirement with budget, policy, or staffing effect</td>
+</tr>
+<tr>
+<td>Stop and escalate</td>
+<td>commitments no one authorized; sensitive data flows without Security involved</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">What it looks like</p>
+<p><em>Assistant:</em> &ldquo;Draft has thirty-one requirements, each traced. Two contradictions: R-07 says acknowledgment within one business day, R-19 says same day; both trace to different sources and the conflict was never decided. I have left both, labeled Open, with the operations lead as owner. Four requirements use &lsquo;as needed&rsquo; without a definition; listed for you.&rdquo;</p>
+</div></div>
+  <nav class="wrap prevnext" aria-label="Previous and next"><a class="pn pn-prev" href="../recipes/04-compare-options-against-explicit-criteria.html" rel="prev"><span class="pn-k">Previous</span><span>Compare options against explicit criteria</span></a><a class="pn pn-next" href="../recipes/06-review-a-memo-for-unsupported-claims.html" rel="next"><span class="pn-k">Next</span><span>Review a memo for unsupported claims, ambiguity, and missing decisions</span></a></nav>
+</main>
+
+<aside class="support-strip" aria-labelledby="support-strip-title">
+  <div class="wrap support-strip-row">
+    <div>
+      <h2 id="support-strip-title" class="support-strip-title">Stuck, unsure, or something feels off?</h2>
+      <p class="support-strip-text">Asking is the expected move. A person answers.</p>
+    </div>
+    <div class="support-strip-actions">
+      <a class="btn btn-primary" href="../support/request-a-guided-session.html">Book a guided first session</a>
+      <a class="btn btn-ghost" href="../support/index.html">Talk to a person</a>
+      <a class="btn btn-quiet" href="../support/index.html#urgent">Urgent: data, security, or an action concern</a>
+    </div>
+  </div>
+</aside>
+
+<footer class="site-foot">
+  <div class="wrap site-foot-row">
+    <p class="site-foot-brand">AI Collaboration Portal · an internal program · prototype</p>
+    <ul class="site-foot-links">
+      <li><a href="../standards/index.html">Standards and safety</a></li>
+      <li><a href="../standards/environment-readiness.html">Environment readiness</a></li>
+      <li><a href="../environments/index.html">Environments</a></li>
+      <li><a href="../leaders/index.html">For leaders</a></li>
+      <li><a href="../support/faq.html">FAQ</a></li>
+      <li><a href="../about.html">About this portal</a></li>
+    </ul>
+    <p class="site-foot-note">Written by Osiris and Sage, with Aster's independent review. Names, roles, and the words this portal uses are on the <a href="../about.html#authors">About page</a>. Nothing here is a testimonial unless the people in it agreed to it. © 2026</p>
+  </div>
+</footer>
+
+<script src="../assets/site.js" defer></script>
+</body>
+</html>

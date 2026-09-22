@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Request a guided first session · AI Collaboration Portal</title>
+<meta name="description" content="One real task, one hour, a guide beside you and the assistant. The aim is finished work and a record you can resume from.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/styles.css">
+<script>(function(){try{var t=localStorage.getItem('portal-theme');if(t==='dark'){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}document.documentElement.classList.add('js');})();</script>
+</head>
+<body class="section-support">
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="site-head">
+  <div class="wrap site-head-row">
+    <a class="brand" href="../index.html"><svg class="brandmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="12" cy="17" r="10" style="fill:var(--warm)"/><rect x="13" y="5" width="16" height="20" rx="6" style="fill:var(--accent);opacity:.92"/></svg><span class="brand-name">AI Collaboration Portal</span></a>
+    <nav id="site-nav" class="site-nav" aria-label="Primary"><ul><li><a href="../index.html">Home</a></li><li><a href="../cases/index.html">Cases</a></li><li><a href="../recipes/index.html">Recipes</a></li><li><a href="../lessons/index.html">Lessons</a></li><li><a href="../environments/index.html">Environments</a></li><li><a href="../support/index.html" aria-current="page">Support</a></li></ul></nav>
+    <button class="theme-toggle" type="button" aria-pressed="false"><span class="theme-toggle-dot" aria-hidden="true"></span>Dark theme</button>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>Menu
+    </button>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+  <nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../index.html">Home</a></li><li><a href="../support/index.html">Support</a></li><li aria-current="page">Request a guided first session</li></ol></nav>
+  <header class="page-head"><div class="wrap page-head-row"><div><h1>Request a guided first session</h1><p class="lede">One real task, one hour, a guide beside you and the assistant. The aim is finished work and a record you can resume from.</p></div></div></header>
+  <div class="wrap prose"><h2 id="what-it-is">What it is</h2>
+<p>A program guide sits with you and the assistant for about an hour, on one real task you are permitted to work on. The guide handles the setup, watches how the portal and the assistant work for you, and aims to have you leave with something finished. It is the recommended start for everyone, and the most reliable one.</p>
+<h2 id="what-to-bring">What to bring</h2>
+<ul>
+<li><strong>One task</strong> that took time but not judgment recently: a summary, a comparison, a first draft, a problem to state. If you are not sure, bring two and the guide will pick.</li>
+<li><strong>The sources</strong> it rests on, with any real personal, customer, or payroll details replaced by placeholders and reference numbers.</li>
+<li><strong>Nothing else.</strong> No preparation, no reading required. The lessons help but are not a prerequisite.</li>
+</ul>
+<h2 id="what-the-session-aims-to-leave-you-with">What the session aims to leave you with</h2>
+<ul>
+<li>A useful piece of work, verified, that you can actually use.</li>
+<li>A project record you can resume from tomorrow.</li>
+<li>A recipe, or an improvement to one, drawn from your task.</li>
+<li>A clear next step, including which environment fits your work.</li>
+</ul>
+<h2 id="request-a-session">Request a session</h2>
+<p>This prototype has no server. Submitting hands the request to your email application, addressed to the program guide, with your answers written out; nothing is stored here. If the address is not configured yet, or your email application does not open, copy the summary that appears and send it yourself.</p>
+<form id="guided-session-form" class="form" data-to="" novalidate>
+  <div class="field">
+    <label for="req-name">Your name</label>
+    <input id="req-name" name="name" type="text" required maxlength="120" autocomplete="name" aria-describedby="req-name-error">
+    <p class="error" id="req-name-error" hidden>Please add your name so the guide knows who to reply to.</p>
+  </div>
+  <div class="field">
+    <label for="req-role">Team or role</label>
+    <input id="req-role" name="role" type="text" maxlength="120" autocomplete="organization-title">
+  </div>
+  <div class="field">
+    <label for="req-work">The work you want to bring</label>
+    <p class="hint" id="req-work-hint">One or two sentences describing the kind of task.</p>
+    <p class="form-warning" id="req-work-warning">Reminder: remove customer, employee, payroll, credential, and other restricted details before sending.</p>
+    <textarea id="req-work" name="work" required maxlength="600" aria-describedby="req-work-hint req-work-warning req-work-error"></textarea>
+    <p class="error" id="req-work-error" hidden>Please describe the task in a sentence or two.</p>
+  </div>
+  <fieldset class="fieldset">
+    <legend>Where will the assistant work?</legend>
+    <div class="choices">
+      <label><input type="radio" name="environment" value="I don't know yet — help me choose" checked> I don't know yet. Help me choose. <em>(the most common answer)</em></label>
+      <label><input type="radio" name="environment" value="Browser and approved business applications"> Browser and approved business applications</label>
+      <label><input type="radio" name="environment" value="Repository and development workspace"> Repository and development workspace</label>
+      <label><input type="radio" name="environment" value="Specialized operational environment"> Specialized operational environment</label>
+    </div>
+  </fieldset>
+  <div class="field">
+    <label for="req-when">Good times for you</label>
+    <input id="req-when" name="when" type="text" maxlength="200" placeholder="e.g. Tuesday or Thursday afternoons">
+  </div>
+  <div class="field">
+    <label for="req-notes">Anything else</label>
+    <p class="form-warning" id="req-notes-warning">Reminder: no restricted details here either.</p>
+    <textarea id="req-notes" name="notes" maxlength="600" aria-describedby="req-notes-warning"></textarea>
+  </div>
+  <div class="field">
+    <p class="form-warning">Before you send: check that nothing above names a real customer or employee, quotes real pay data, or contains a credential.</p>
+    <button type="submit" class="btn btn-primary">Send the request</button>
+  </div>
+  <p id="form-status" class="form-status" role="status" tabindex="-1" hidden></p>
+  <pre id="form-summary" hidden></pre>
+</form>
+
+<h2 id="what-happens-next">What happens next</h2>
+<p>The guide replies to agree a time. If you asked for help choosing an environment, the reply comes with three short questions: what work, which systems, what kind of data. That is the whole process.</p></div>
+  
+</main>
+
+<aside class="support-strip" aria-labelledby="support-strip-title">
+  <div class="wrap support-strip-row">
+    <div>
+      <h2 id="support-strip-title" class="support-strip-title">Stuck, unsure, or something feels off?</h2>
+      <p class="support-strip-text">Asking is the expected move. A person answers.</p>
+    </div>
+    <div class="support-strip-actions">
+      <a class="btn btn-primary" href="../support/request-a-guided-session.html">Book a guided first session</a>
+      <a class="btn btn-ghost" href="../support/index.html">Talk to a person</a>
+      <a class="btn btn-quiet" href="../support/index.html#urgent">Urgent: data, security, or an action concern</a>
+    </div>
+  </div>
+</aside>
+
+<footer class="site-foot">
+  <div class="wrap site-foot-row">
+    <p class="site-foot-brand">AI Collaboration Portal · an internal program · prototype</p>
+    <ul class="site-foot-links">
+      <li><a href="../standards/index.html">Standards and safety</a></li>
+      <li><a href="../standards/environment-readiness.html">Environment readiness</a></li>
+      <li><a href="../environments/index.html">Environments</a></li>
+      <li><a href="../leaders/index.html">For leaders</a></li>
+      <li><a href="../support/faq.html">FAQ</a></li>
+      <li><a href="../about.html">About this portal</a></li>
+    </ul>
+    <p class="site-foot-note">Written by Osiris and Sage, with Aster's independent review. Names, roles, and the words this portal uses are on the <a href="../about.html#authors">About page</a>. Nothing here is a testimonial unless the people in it agreed to it. © 2026</p>
+  </div>
+</footer>
+
+<script src="../assets/site.js" defer></script>
+</body>
+</html>
