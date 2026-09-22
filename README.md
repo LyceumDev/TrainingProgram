@@ -1,6 +1,6 @@
 # AI Collaboration Portal — prototype
 
-> **For reviewers (Kim, and anyone she invites):** download the repository (Code, then Download ZIP), unzip it, and open `site/index.html` in your browser. Nothing to install. This is prototype v0.4, under review: the Standards page is marked as a draft for Security review, the request form has no recipient address yet, and the Environments page states what is approved and what is still being assessed. Comments are welcome by any route. The About page says who made it and the words it uses.
+> **For reviewers:** open the prototype at the published link your program guide sent you, or download the repository (Code, then Download ZIP), unzip it, and open `site/index.html` in your browser. Nothing to install. This is prototype v0.4, under review: the Standards page is marked as a draft for Security review, the request form has no recipient address yet, and the Environments page states what is approved and what is still being assessed. Comments are welcome by any route. The About page says who made it and the words it uses.
 
 The clickable prototype from the settled plan (`docs/training-program/PLAN_AI-Partnership-Portal_v1.0-SETTLED_2026-09-22.md`, P1) as revised in v0.4 after Aster's full review (2026-09-22). Content is the product; the prototype is one rendering of it, and the SharePoint pages are the other. Nothing is written twice.
 
