@@ -27,7 +27,7 @@ MD_CFG = {"toc": {"toc_depth": "2-3", "title": "On this page"}}
 NAV = [  # label, path (site-relative), section key
     ("Home", "index.html", "home"),
     ("Cases", "cases/index.html", "case"),
-    ("Recipes", "recipes/index.html", "recipe"),
+    ("Task guides", "guides/index.html", "recipe"),
     ("Lessons", "lessons/index.html", "lesson"),
     ("Environments", "environments/index.html", "environment"),
     ("Support", "support/index.html", "support"),
@@ -44,6 +44,17 @@ CASE_ORDER = ["modernization", "business-analysis", "customer-support"]
 
 RISK_NOTE = ("Workflow risk assumes permitted information in an approved environment. Data sensitivity, "
              "consequential actions, and organizational policy may require stronger controls and always override this label.")
+
+# Old addresses that reviewers may hold; each gets a small redirect page.
+REDIRECTS = {
+    "recipes/index.html": "guides/index.html",
+    "recipes/01-turn-a-rough-request-into-a-problem-statement.html": "guides/01-turn-a-vague-request-into-a-clear-problem-statement.html",
+    "recipes/02-extract-requirements-preserving-source-language.html": "guides/02-extract-requirements-in-the-authors-own-words.html",
+    "recipes/03-separate-facts-inferences-decisions-and-open-questions.html": "guides/03-sort-a-documents-claims-into-the-four-labels.html",
+    "recipes/04-compare-options-against-explicit-criteria.html": "guides/04-compare-options-against-criteria-you-set-first.html",
+    "recipes/05-draft-a-specification-with-traceability.html": "guides/05-draft-a-specification-you-can-trace-to-its-sources.html",
+    "recipes/06-review-a-memo-for-unsupported-claims.html": "guides/06-check-a-memo-before-it-goes-out.html",
+}
 
 
 # ----------------------------------------------------------------- helpers
@@ -140,15 +151,15 @@ def sc_recipes(pages, case=None, chips=False, limit=None):
             f'<span class="eyebrow">{esc(r.meta.get("case_label", ""))}</span>'
             f'<h3 class="card-title">{esc(r.title)}</h3>'
             f'<p class="card-text">{esc(r.meta.get("summary",""))}</p>'
-            f'<dl class="card-meta"><div><dt>Outcome</dt><dd>{esc(r.meta.get("outcome",""))}</dd></div>'
+            f'<dl class="card-meta"><div><dt>You\'ll create</dt><dd>{esc(r.meta.get("outcome",""))}</dd></div>'
             f'<div><dt>Environment</dt><dd>{esc(r.meta.get("environment_label",""))}</dd></div>'
             f'<div><dt>Workflow risk</dt><dd>{esc(r.meta.get("risk",""))}</dd></div></dl></a>')
     out = ""
     if chips:
         out += (
             '<div class="filters" role="group" aria-label="Filter recipes">'
-            '<label class="search"><span class="visually-hidden">Search recipes</span>'
-            '<input type="search" id="recipe-search" placeholder="Search recipes by task…" autocomplete="off"></label>'
+            '<label class="search"><span class="visually-hidden">Search task guides</span>'
+            '<input type="search" id="recipe-search" placeholder="Search task guides…" autocomplete="off"></label>'
             '<div class="chips" data-filter="case"><span class="chips-label">Work</span>'
             '<button class="chip is-on" data-value="">All</button>'
             '<button class="chip" data-value="modernization">Modernization</button>'
@@ -161,7 +172,7 @@ def sc_recipes(pages, case=None, chips=False, limit=None):
             '<button class="chip" data-value="high">High</button></div></div>'
             f'<p class="risk-note">{RISK_NOTE}</p>')
     out += f'<div class="grid grid-2 recipes" id="recipe-grid">{"".join(cards)}</div>'
-    out += '<p class="empty" id="recipe-empty" hidden>No recipe matches yet. Clear a filter, or <a href="~/support/request-a-guided-session.html">ask for a guided first session</a> and we will write the recipe with you.</p>'
+    out += '<p class="empty" id="recipe-empty" hidden>No task guide matches yet. Clear a filter, or <a href="~/support/request-a-guided-session.html">ask for a guided first session</a> and we will write the guide with you.</p>'
     return out
 
 def sc_lessons(pages):
@@ -253,17 +264,23 @@ def heading_html(page):
     if page.section == "lesson" and not is_index:
         kicker = kicker or f"Lesson {page.order} of 6"
     elif page.section == "recipe" and not is_index:
-        kicker = kicker or f"Recipe · {m.get('case_label', '')}"
+        kicker = kicker or f"Task guide · {m.get('case_label', '')}"
     art = illustration(m["art"], "head-art") if m.get("art") else ""
     meta = ""
-    if page.section == "recipe" and not is_index:
-        meta = ('<dl class="meta-band">'
-                f'<div><dt>Outcome</dt><dd>{esc(m.get("outcome",""))}</dd></div>'
+    is_guide = page.section == "recipe" and not is_index
+    if is_guide:
+        use_when = f'<p class="use-when"><strong>Use this when</strong> {esc(m.get("use_when", ""))}</p>' if m.get("use_when") else ""
+        boundary = (f'<div class="boundary"><p><strong>{esc(m.get("boundary", ""))}</strong> {esc(m.get("boundary_more", ""))}</p></div>'
+                    if m.get("boundary") else "")
+        meta = (use_when + boundary +
+                '<dl class="meta-strip">'
+                f'<div><dt>You\'ll create</dt><dd>{esc(m.get("outcome",""))}</dd></div>'
+                f'<div><dt>Time</dt><dd>{esc(m.get("time",""))}</dd></div>'
+                f'<div><dt>You\'ll need</dt><dd>{esc(m.get("you_need",""))}</dd></div>'
                 f'<div><dt>Environment</dt><dd>{esc(m.get("environment_label",""))}</dd></div>'
-                f'<div><dt>Workflow risk</dt><dd>{esc(m.get("risk",""))}</dd></div>'
-                f'<div><dt>Time</dt><dd>{esc(m.get("time",""))}</dd></div></dl>'
+                f'<div><dt>Workflow risk</dt><dd>{esc(m.get("risk",""))}<span class="meta-caption">Review level, not data permission.</span></dd></div></dl>'
                 f'<p class="risk-note">{RISK_NOTE}</p>')
-    summary = f'<p class="lede">{esc(m["summary"])}</p>' if m.get("summary") else ""
+    summary = "" if is_guide else (f'<p class="lede">{esc(m["summary"])}</p>' if m.get("summary") else "")
     k = f'<p class="eyebrow">{esc(kicker)}</p>' if kicker else ""
     return (f'<header class="page-head"><div class="wrap page-head-row"><div>{k}<h1>{esc(page.title)}</h1>{summary}{meta}</div>'
             f'{f"<div class=head-art-wrap aria-hidden=true>{art}</div>" if art else ""}</div></header>')
@@ -291,6 +308,43 @@ def relink(htmltext, prefix):
     return htmltext.replace('href="~/', f'href="{prefix}').replace('src="~/', f'src="{prefix}')
 
 
+def guide_wrap(page, body):
+    """Task-guide layout: an overview rail (read first) beside the two-part body."""
+    m = page.meta
+    h2s = re.findall(r'<h2[^>]*\bid="([^"]+)"[^>]*>(.*?)</h2>', body, flags=re.S)
+    toc = "".join(f'<li><a href="#{esc(i)}">{esc(re.sub(r"<[^>]+>", "", t)).strip()}</a></li>' for i, t in h2s)
+    before = [b.strip() for b in m.get("before", "").split("|") if b.strip()] or [
+        "Confirm the environment is approved for this work.",
+        "Replace personal, customer, payroll, or credential details.",
+        "Keep source names and locations so claims can be checked."]
+    before_html = "".join(f"<li>{esc(b)}</li>" for b in before)
+    key = ""
+    if m.get("key_a") and m.get("key_b"):
+        ka, _, ta = m["key_a"].partition(":")
+        kb, _, tb = m["key_b"].partition(":")
+        key = (f'<section class="rail-card" aria-labelledby="rail-key"><h2 id="rail-key">The key distinction</h2>'
+               f'<p><strong>{esc(ka.strip())}:</strong> {esc(ta.strip())}</p><p><strong>{esc(kb.strip())}:</strong> {esc(tb.strip())}</p></section>')
+    rail = (
+        '<aside class="rail" aria-label="Guide overview">'
+        '<section class="rail-card rail-how" aria-labelledby="rail-how"><h2 id="rail-how">How this guide works</h2>'
+        '<p>The page has two layers. Complete the task first; then apply the review and authority checks before the work goes anywhere.</p>'
+        '<ol class="rail-steps"><li>Do the work step by step</li><li>Review claims and framing</li><li>Confirm boundaries and save</li></ol></section>'
+        f'<section class="rail-card" aria-labelledby="rail-before"><h2 id="rail-before">Before you start</h2><ul class="rail-checks">{before_html}</ul></section>'
+        f'<nav class="rail-card" aria-labelledby="rail-toc"><h2 id="rail-toc">On this page</h2><ul class="rail-toc">{toc}</ul></nav>'
+        f'{key}</aside>')
+    return f'<div class="wrap guide">{rail}<div class="guide-main prose">{body}</div></div>'
+
+
+def write_redirects():
+    import posixpath
+    for old, new in REDIRECTS.items():
+        rel = posixpath.relpath(new, posixpath.dirname(old) or ".")
+        write(SITE / old, (
+            '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex, nofollow">'
+            f'<meta http-equiv="refresh" content="0; url={rel}"><title>Moved · AI Collaboration Portal</title>'
+            f'<link rel="canonical" href="{rel}"></head><body><p>This page has moved to <a href="{rel}">{esc(new)}</a>.</p></body></html>\n'))
+
+
 def build():
     pages = load_pages()
     template = read(BUILD / "template.html")
@@ -315,6 +369,8 @@ def build():
     index = []
     for page in pages.values():
         body, wide = render_body(page, pages)
+        if page.section == "recipe" and page.slug != "index":
+            body, wide = guide_wrap(page, body), True   # the guide layout supplies its own wrap
         out = (template
                .replace("{{title}}", esc(page.title if page.rel != "index.html" else page.meta.get("hero_title", page.title)))
                .replace("{{description}}", esc(page.meta.get("summary", "")))
@@ -330,7 +386,8 @@ def build():
         write(SITE / page.rel, out)
         index.append({"title": page.title, "url": page.rel, "section": page.section, "summary": page.meta.get("summary", "")})
     write(SITE / "assets" / "index.json", json.dumps(index, indent=1))
-    print(f"built {len(pages)} pages -> {SITE}")
+    write_redirects()
+    print(f"built {len(pages)} pages (+{len(REDIRECTS)} redirect stubs) -> {SITE}")
     req = SITE / "support" / "request-a-guided-session.html"
     if req.exists() and 'data-to=""' in read(req):
         print("WARNING: the guided-session form has no recipient (data-to is empty). "

@@ -23,4 +23,4 @@ Before any product is presented on this portal as an approved environment for an
 
 ## Who assesses
 
-IT leads the environment assessment with Security's input. The program supplies the work requirements from the cases and recipes. The result may be more than one approved environment, because business documents, repositories, and operational systems do not have identical needs. Status is published on the [environments page](~/environments/index.html) as each assessment concludes.
+IT leads the environment assessment with Security's input. The program supplies the work requirements from the cases and task guides. The result may be more than one approved environment, because business documents, repositories, and operational systems do not have identical needs. Status is published on the [environments page](~/environments/index.html) as each assessment concludes.

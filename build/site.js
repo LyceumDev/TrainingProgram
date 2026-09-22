@@ -38,7 +38,29 @@
     });
   }
 
-  // Recipe filters and search
+  // Starter instructions: a copy button on each, with a selection fallback.
+  document.querySelectorAll(".admonition.starter pre").forEach(function (pre) {
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "copy-btn";
+    btn.textContent = "Copy";
+    btn.setAttribute("aria-label", "Copy the starter instruction");
+    pre.parentNode.insertBefore(btn, pre);
+    btn.addEventListener("click", function () {
+      var text = pre.textContent.trim();
+      var done = function () { btn.textContent = "Copied"; btn.dataset.state = "done"; setTimeout(function () { btn.textContent = "Copy"; delete btn.dataset.state; }, 2000); };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done, function () { selectAll(); });
+      } else { selectAll(); }
+      function selectAll() {
+        var range = document.createRange(); range.selectNodeContents(pre);
+        var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range);
+        btn.textContent = "Selected: press Ctrl+C";
+      }
+    });
+  });
+
+  // Task-guide filters and search
   var grid = document.getElementById("recipe-grid");
   if (grid) {
     var cards = Array.prototype.slice.call(grid.querySelectorAll(".card-recipe"));

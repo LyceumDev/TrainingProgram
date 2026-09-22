@@ -51,6 +51,8 @@ notes.append(f"links: {len(pages)} pages, {refs} internal references checked")
 # ------------------------------------------------------------- headings
 for p in pages:
     html = rd(p)
+    if 'http-equiv="refresh"' in html:      # redirect stubs for moved pages carry no headings by design
+        continue
     levels = [int(h) for h in re.findall(r"<h([1-6])[\s>]", html)]
     if levels.count(1) != 1:
         failures.append(f"{p.relative_to(SITE)}: {levels.count(1)} H1 elements (need exactly 1)")

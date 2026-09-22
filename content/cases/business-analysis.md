@@ -17,19 +17,19 @@ The division that works: you supply the purpose, the sources, and the judgment; 
 Tuesday morning. A manager forwards a two-paragraph email asking for "a better way to handle the intake backlog," plus a spreadsheet and last year's process document.
 
 1. You open the project record for this request, add the three sources, and write the purpose in two sentences.
-2. With the [problem statement recipe](~/recipes/01-turn-a-rough-request-into-a-problem-statement.html), the assistant drafts a structured statement from the email and the documents. Two claims come back labeled Open, because nothing in the sources supports them. You call the manager; one is confirmed, one was a guess. The record gets both.
-3. With the [requirements recipe](~/recipes/02-extract-requirements-preserving-source-language.html), the assistant lifts fourteen candidate requirements, each with the sentence it came from. You strike three that were wishes, not requirements.
+2. With the [problem statement guide](~/guides/01-turn-a-vague-request-into-a-clear-problem-statement.html), the assistant drafts a structured statement from the email and the documents. Two claims come back labeled Open, because nothing in the sources supports them. You call the manager; one is confirmed, one was a guess. The record gets both.
+3. With the [requirements guide](~/guides/02-extract-requirements-in-the-authors-own-words.html), the assistant lifts fourteen candidate requirements, each with the sentence it came from. You strike three that were wishes, not requirements.
 4. By lunch you have a one-page problem statement and a traced requirements list, both with sources, to take to Thursday's meeting. The record is updated: what was decided, what is open, who owns the next step.
 
 The workflow itself depends on no particular product. Using it with organizational material still depends on an approved environment, or on the guide's approved environment during the recorded interim. Beyond that, it took the documents and an hour.
 
-## The first three recipes to try
+## The first three task guides to try
 
-1. [Turn a rough request into a structured problem statement](~/recipes/01-turn-a-rough-request-into-a-problem-statement.html)
-2. [Extract requirements while preserving source language](~/recipes/02-extract-requirements-preserving-source-language.html)
-3. [Separate verified facts, inferences, decisions, and open questions](~/recipes/03-separate-facts-inferences-decisions-and-open-questions.html)
+1. [Turn a vague request into a clear problem statement](~/guides/01-turn-a-vague-request-into-a-clear-problem-statement.html)
+2. [Extract requirements in the authors' own words](~/guides/02-extract-requirements-in-the-authors-own-words.html)
+3. [Sort a document's claims into the four labels](~/guides/03-sort-a-documents-claims-into-the-four-labels.html)
 
-Then: [compare options against explicit criteria](~/recipes/04-compare-options-against-explicit-criteria.html), [draft a specification with traceability](~/recipes/05-draft-a-specification-with-traceability.html), and [review a memo for unsupported claims](~/recipes/06-review-a-memo-for-unsupported-claims.html).
+Then: [compare options against criteria you set first](~/guides/04-compare-options-against-criteria-you-set-first.html), [draft a specification you can trace to its sources](~/guides/05-draft-a-specification-you-can-trace-to-its-sources.html), and [check a memo before it goes out](~/guides/06-check-a-memo-before-it-goes-out.html).
 
 {{recipes case=business-analysis}}
 
@@ -40,7 +40,7 @@ This case can begin in an [approved browser or document environment](~/environme
 ## Data and authority boundaries
 
 - **Data.** Analysis documents often contain names, amounts, and case details. The [one absolute](~/lessons/05-safety-and-organizational-data.html) applies: real customer, employee, and payroll information does not go into the conversation. Describe the kind of thing, use placeholders, and point with reference numbers.
-- **Authority.** In this case the assistant reads, drafts, and recommends. It does not decide scope, priority, or what the organization will build or buy. Every recipe on this page states its own authority section.
+- **Authority.** In this case the assistant reads, drafts, and recommends. It does not decide scope, priority, or what the organization will build or buy. Every task guide on this page ends with the boundaries to confirm before the assistant begins.
 
 ## Common failure and recovery moments
 

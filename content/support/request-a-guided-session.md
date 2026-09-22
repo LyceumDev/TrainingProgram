@@ -18,7 +18,7 @@ A program guide sits with you and the assistant for about an hour, on one real t
 
 - A useful piece of work, verified, that you can actually use.
 - A project record you can resume from tomorrow.
-- A recipe, or an improvement to one, drawn from your task.
+- A task guide, or an improvement to one, drawn from your task.
 - A clear next step, including which environment fits your work.
 
 ## Request a session

@@ -21,9 +21,9 @@ The one thing this case has more of than any other is sensitive information. Rea
 ## What you can do now
 
 - Read the [six lessons](~/lessons/index.html), especially [lesson 5](~/lessons/05-safety-and-organizational-data.html).
-- Practice with non-sensitive material: a made-up ticket, or a real one with every identifying detail replaced. The [problem statement](~/recipes/01-turn-a-rough-request-into-a-problem-statement.html) and [memo review](~/recipes/06-review-a-memo-for-unsupported-claims.html) recipes work well on support messages and draft replies.
+- Practice with non-sensitive material: a made-up ticket, or a real one with every identifying detail replaced. The [problem statement](~/guides/01-turn-a-vague-request-into-a-clear-problem-statement.html) and [memo check](~/guides/06-check-a-memo-before-it-goes-out.html) task guides work well on support messages and draft replies.
 - [Book a guided first session](~/support/request-a-guided-session.html) and bring the kind of ticket you handle most. The guide will show you where an assistant helps and where the line is.
 
 ## What waits
 
-The complete case, with recipes for intake, triage, response drafting, escalation, and follow-up, is published when an approved environment exists for support work and when the organization's integrated support system (OTIS) is ready for assistant-supported workflows. Until then, this page is an honest preview, not a promise.
+The complete case, with task guides for intake, triage, response drafting, escalation, and follow-up, is published when an approved environment exists for support work and when the organization's integrated support system (OTIS) is ready for assistant-supported workflows. Until then, this page is an honest preview, not a promise.

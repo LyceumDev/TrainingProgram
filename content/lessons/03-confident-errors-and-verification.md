@@ -18,7 +18,7 @@ A good answer names a document, a page, a table, or a check that was run. A weak
 
 ## The four labels
 
-Everything in this program, lessons, recipes, records, and the seminar, uses one shared vocabulary for the state of a piece of work. Learn these four and you can read any artifact a human–AI working team produces.
+Everything in this program, lessons, task guides, records, and the seminar, uses one shared vocabulary for the state of a piece of work. Learn these four and you can read any artifact a human–AI working team produces.
 
 {{labels}}
 

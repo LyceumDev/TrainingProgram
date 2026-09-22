@@ -34,9 +34,9 @@ Anything hard to undo, visible to others, or touching money, people, or records 
     - it needs information it should not have (lesson 5);
     - the result would go to someone outside the working team.
 
-## Every recipe states the authority
+## Every task guide states its boundaries
 
-Each recipe in this portal has a short authority section: what the assistant may do without asking, what you must review, what needs an authorized decision-maker, and what must stop and escalate. Read it before you start, and there are far fewer surprises in what the assistant does.
+Each task guide in this portal ends with the boundaries to confirm before the assistant begins: what it may do once you have approved them, what you must review, what needs an authorized decision-maker, and what must stop and escalate. Read them before you start, and there are far fewer surprises in what the assistant does.
 
 !!! do "Something to do today"
     Pick a task you might hand to an assistant and write one line for each level: what it may read, what it may draft, what it may recommend, and whether there is anything at all it may do on its own. Most people find the last line is short. That is correct.

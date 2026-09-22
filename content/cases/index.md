@@ -4,7 +4,7 @@ section: case
 order: 0
 summary: Three entrances, one working model. Find the case that looks like your week.
 ---
-Everyone learns the same working model. Where you enter depends on the work you already do. Each case shows what working with an AI assistant looks like in that work, a realistic day, the first three recipes to try, the environments involved, the boundaries, and the moments when things go wrong and how they get fixed.
+Everyone learns the same working model. Where you enter depends on the work you already do. Each case shows what working with an AI assistant looks like in that work, a realistic day, the first three task guides to try, the environments involved, the boundaries, and the moments when things go wrong and how they get fixed.
 
 ## Choose your entrance
 

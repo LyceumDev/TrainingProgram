@@ -2,7 +2,7 @@
 title: Begin real work
 section: lesson
 order: 6
-summary: Choose a case, find a recipe, pick an environment if you know it, and book a guided first session.
+summary: Choose a case, find a task guide, pick an environment if you know it, and book a guided first session.
 ---
 ## You have the model. Now use it on something real.
 
@@ -12,9 +12,9 @@ The foundation is not the point; the work is. Here is the whole path from this p
 
 [Modernization work](~/cases/modernization.html), [business analysis and specification writing](~/cases/business-analysis.html), or [customer support](~/cases/customer-support.html). If more than one applies, start with the one whose next task is already on your desk.
 
-## 2. Find one recipe
+## 2. Find one task guide
 
-Every case page lists the first three recipes to try, and the [recipe library](~/recipes/index.html) has all of them. A recipe tells you what to bring, what the assistant will carry, what you decide, what to check, what to keep, and when to stop. Pick the one closest to the task you wrote down in lesson 1.
+Every case page lists the first three task guides to try, and the [task guide library](~/guides/index.html) has all of them. A task guide tells you what to do first, what the assistant carries, what to check, what to keep, and when to stop. Pick the one closest to the task you wrote down in lesson 1.
 
 ## 3. Know where the assistant will work, or say you don't
 
@@ -26,7 +26,7 @@ This is the recommended start for everyone. You bring one real, permitted task. 
 
 - a useful piece of work, verified, that you can actually use;
 - a project record you can resume from tomorrow;
-- a recipe, or an improvement to one, drawn from your task;
+- a task guide, or an improvement to one, drawn from your task;
 - a clear next step for you and your work with the assistant.
 
 [Request a guided first session.](~/support/request-a-guided-session.html)

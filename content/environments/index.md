@@ -37,4 +37,4 @@ Good. Most people say this, and it is a complete answer. [Say it here](~/support
 
 ## Why environments are kept separate from everything else
 
-The collaboration principles, the safety rules, and the recipes on this portal do not depend on any one product. Product-specific instructions live on setup pages that can be replaced when a product changes, without rewriting the program. If the product your team uses changes next year, your lessons, your recipes, and your project record still hold.
+The collaboration principles, the safety rules, and the task guides on this portal do not depend on any one product. Product-specific instructions live on setup pages that can be replaced when a product changes, without rewriting the program. If the product your team uses changes next year, your lessons, your task guides, and your project record still hold.

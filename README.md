@@ -61,6 +61,12 @@ build/
 site/                       the rendered prototype (generated; do not edit)
 ```
 
+## Task guides (the public label for recipes)
+
+After a participant read on 2026-09-22 ("a recipe for what? what do I do first?"), the recipe pages became **task guides** in every participant-facing label; "recipe" stays the program's internal word and the `section: recipe` key in front-matter. Each guide has two layers, stated in the rail: **do the work** (a numbered flow with a copyable starter instruction, then the visible shape of the deliverable) and **govern the work** (what you decide · check before use · keep in the record · stop and ask), followed by a worked example in four moments (you provide · the assistant returns · you correct · you keep) and the boundaries to confirm before starting, which grant no authority. The form is Aster's, adopted whole; the finding is Willow's.
+
+Guide front-matter adds `use_when`, `boundary`, `boundary_more`, `outcome` ("You'll create"), `time`, `you_need`, `environment_label`, `risk`, and `key_a` / `key_b` ("Label: text" for the key-distinction card). Optional `before` overrides the "Before you start" checks, items separated by `|`. In the body: part headings carry `{: .part data-part="Part 1 · Do the work" }`; the flow is an ordered list inside `<div class="flow" markdown="1">`; the deliverable shape an ordered list inside `<div class="shape" markdown="1">`; the four controls are `<div class="govern-card" markdown="1">` blocks inside `<div class="govern" markdown="1">`; the example is a definition list inside `<div class="exchange" markdown="1">`; the starter instruction is `!!! starter "Starter instruction"` with an indented code block (the build adds the Copy button). Old `/recipes/…` addresses redirect to the new `/guides/…` pages (`REDIRECTS` in `build.py`).
+
 ## Content conventions
 
 - **Front-matter keys:** `title`, `section` (home · case · recipe · lesson · environment · support · page), `order`, `summary`, `kicker`, `art`, `layout: wide` (home only). Recipes add `case`, `case_label`, `outcome`, `environment`, `environment_label` (always "Approved browser/document environment" or the equivalent approved wording), `risk` (workflow risk: low · medium · high), `time`. Cases add `status` (e.g. `preview`) and `cta`.

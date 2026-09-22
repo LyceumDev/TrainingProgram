@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Extract requirements in the authors&#x27; own words · AI Collaboration Portal</title>
+<meta name="description" content="Lift every candidate requirement out of the sources, each with the exact sentence it came from, so nothing is invented and nothing is lost.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/styles.css">
+<script>(function(){try{var t=localStorage.getItem('portal-theme');if(t==='dark'){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}document.documentElement.classList.add('js');})();</script>
+</head>
+<body class="section-recipe">
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="site-head">
+  <div class="wrap site-head-row">
+    <a class="brand" href="../index.html"><svg class="brandmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="12" cy="17" r="10" style="fill:var(--warm)"/><rect x="13" y="5" width="16" height="20" rx="6" style="fill:var(--accent);opacity:.92"/></svg><span class="brand-name">AI Collaboration Portal</span></a>
+    <nav id="site-nav" class="site-nav" aria-label="Primary"><ul><li><a href="../index.html">Home</a></li><li><a href="../cases/index.html">Cases</a></li><li><a href="../guides/index.html" aria-current="page">Task guides</a></li><li><a href="../lessons/index.html">Lessons</a></li><li><a href="../environments/index.html">Environments</a></li><li><a href="../support/index.html">Support</a></li></ul></nav>
+    <button class="theme-toggle" type="button" aria-pressed="false"><span class="theme-toggle-dot" aria-hidden="true"></span>Dark theme</button>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>Menu
+    </button>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+  <nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../index.html">Home</a></li><li><a href="../guides/index.html">Task guides</a></li><li aria-current="page">Extract requirements in the authors&#x27; own words</li></ol></nav>
+  <header class="page-head"><div class="wrap page-head-row"><div><p class="eyebrow">Task guide · Business analysis</p><h1>Extract requirements in the authors&#x27; own words</h1><p class="use-when"><strong>Use this when</strong> someone hands you notes, emails, or documents and asks what the requirements are.</p><div class="boundary"><p><strong>You are listing candidate requirements with their sources, not deciding what gets built.</strong> Keeping the authors&#x27; words is the point. Paraphrase is where requirements quietly change meaning.</p></div><dl class="meta-strip"><div><dt>You'll create</dt><dd>a traced list of candidate requirements</dd></div><div><dt>Time</dt><dd>30 to 60 minutes</dd></div><div><dt>You'll need</dt><dd>the permitted sources and a one-line statement of scope</dd></div><div><dt>Environment</dt><dd>Approved browser/document environment</dd></div><div><dt>Workflow risk</dt><dd>low<span class="meta-caption">Review level, not data permission.</span></dd></div></dl><p class="risk-note">Workflow risk assumes permitted information in an approved environment. Data sensitivity, consequential actions, and organizational policy may require stronger controls and always override this label.</p></div></div></header>
+  <div class="wrap guide"><aside class="rail" aria-label="Guide overview"><section class="rail-card rail-how" aria-labelledby="rail-how"><h2 id="rail-how">How this guide works</h2><p>The page has two layers. Complete the task first; then apply the review and authority checks before the work goes anywhere.</p><ol class="rail-steps"><li>Do the work step by step</li><li>Review claims and framing</li><li>Confirm boundaries and save</li></ol></section><section class="rail-card" aria-labelledby="rail-before"><h2 id="rail-before">Before you start</h2><ul class="rail-checks"><li>Confirm the environment is approved for this work.</li><li>Replace personal, customer, payroll, or credential details.</li><li>Keep source names and locations so claims can be checked.</li></ul></section><nav class="rail-card" aria-labelledby="rail-toc"><h2 id="rail-toc">On this page</h2><ul class="rail-toc"><li><a href="#start-with-these-six-steps">Start with these six steps</a></li><li><a href="#use-this-list-shape">Use this list shape</a></li><li><a href="#review-preserve-and-know-when-to-stop">Review, preserve, and know when to stop</a></li><li><a href="#what-a-useful-exchange-looks-like">What a useful exchange looks like</a></li><li><a href="#boundaries-to-confirm-before-starting">Boundaries to confirm before starting</a></li></ul></nav><section class="rail-card" aria-labelledby="rail-key"><h2 id="rail-key">The key distinction</h2><p><strong>Candidate:</strong> a statement lifted from a source, quoted exactly, that might be a requirement.</p><p><strong>Requirement:</strong> a candidate you have decided to keep. This guide produces candidates and records your keep-or-strike decisions.</p></section></aside><div class="guide-main prose"><h2 class="part" data-part="Part 1 · Do the work" id="start-with-these-six-steps">Start with these six steps</h2>
+<p>The assistant reads everything and quotes exactly. You set the scope, define what counts as a requirement here, and make every keep-or-strike call.</p>
+<div class="flow">
+<ol>
+<li><strong>Gather the permitted sources</strong>
+   Interview notes, emails, policy documents, existing specifications, meeting minutes. Replace restricted details before sharing anything, and keep each source&rsquo;s name and location so quotes can be checked.</li>
+<li><strong>Brief the assistant</strong>
+   State the scope in one line: which system, process, or decision the requirements are for. Give your definition of a requirement for this project. A common one: a statement of something the solution must do or must be, testable in principle, owned by someone.</li>
+<li><strong>Ask for the traced list</strong>
+   Every candidate with the exact sentence it came from, quoted, and the source and location named. No paraphrase of the requirement text.</li>
+<li><strong>Ask it to group and flag</strong>
+   Group by theme. Flag duplicates and near-duplicates across sources, candidates that are wishes, constraints, or assumptions rather than requirements, and places where two sources conflict.</li>
+<li><strong>Decide keep or strike, and settle the conflicts</strong>
+   The assistant proposes; you strike and keep. Resolve each conflict or assign it to the person who can. Part 2 below has the checks.</li>
+<li><strong>Save the list with its quotes</strong>
+   The version with the quoted sentences is the record. A later specification will cite it. Part 2 says what else the record holds.</li>
+</ol>
+</div>
+<div class="admonition starter">
+<p class="admonition-title">Starter instruction</p>
+<p>Copy this as your first message and fill in the scope.</p>
+<pre><code>Help me extract candidate requirements from these sources for [scope]. For each candidate, quote the exact sentence it comes from and name the source and its location. Group the candidates by theme. Flag duplicates, and flag anything that is a wish, a constraint, or an assumption rather than a requirement. List every place where two sources conflict. Do not paraphrase the requirement text.
+</code></pre>
+</div>
+<h2 class="part" data-part="The deliverable" id="use-this-list-shape">Use this list shape</h2>
+<p>One row per candidate. If a column cannot be filled from the sources, leave it visible and mark it Open.</p>
+<div class="shape">
+<ol>
+<li><strong>Identifier</strong> A short code so the candidate can be cited later.</li>
+<li><strong>Candidate, in the source&rsquo;s words</strong> The exact sentence, quoted.</li>
+<li><strong>Source and location</strong> Which document, and where in it.</li>
+<li><strong>Theme</strong> The group it belongs to.</li>
+<li><strong>Flag</strong> Duplicate, wish, constraint, assumption, or conflict, with the reason.</li>
+<li><strong>Your decision</strong> Keep, strike, or ask, with the reason.</li>
+</ol>
+</div>
+<h2 class="part" data-part="Part 2 · Govern the work" id="review-preserve-and-know-when-to-stop">Review, preserve, and know when to stop</h2>
+<p>These are not more drafting steps. They are the checks that make the list safe to build on.</p>
+<div class="govern">
+<div class="govern-card">
+<h3 id="what-you-decide">What you decide</h3>
+<ul>
+<li>Which candidates are requirements and which are not.</li>
+<li>How each conflict between sources is resolved, or who to ask.</li>
+<li>Whether tightened wording still says what the author meant. When in doubt, keep the quote and add your gloss beside it.</li>
+</ul>
+</div>
+<div class="govern-card">
+<h3 id="check-before-use">Check before use</h3>
+<ul>
+<li>Spot-check quoted sentences against their sources, more of them the more the list will be relied on. If one is not verbatim, check them all.</li>
+<li>Confirm no candidate appears without a source sentence.</li>
+<li>Confirm every conflict names both sources.</li>
+</ul>
+</div>
+<div class="govern-card">
+<h3 id="keep-in-the-record">Keep in the record</h3>
+<ul>
+<li>The traced list, with the quotes.</li>
+<li>The strike decisions and why.</li>
+<li>The conflicts and who is resolving each.</li>
+</ul>
+</div>
+<div class="govern-card">
+<h3 id="stop-and-ask">Stop and ask</h3>
+<ul>
+<li>Sources hold personal, customer, or payroll information. Extract from redacted copies, or ask.</li>
+<li>A candidate is itself a purchase, policy, or staffing decision. It belongs to an authorized person, in the open items.</li>
+<li>The sources are so thin that the assistant is filling gaps by inference. Go get the source.</li>
+</ul>
+</div>
+</div>
+<h2 class="part" data-part="Worked example" id="what-a-useful-exchange-looks-like">What a useful exchange looks like</h2>
+<div class="exchange">
+<dl>
+<dt>You provide</dt>
+<dd>&ldquo;Three sources: the March email thread, the intake process document, and the interview notes, with names replaced. Scope: the intake process. A requirement here is something the process must do or be, testable, with an owner.&rdquo;</dd>
+<dt>The assistant returns</dt>
+<dd>Fourteen candidates, each quoted with its location, grouped in four themes. Three flagged as wishes (&ldquo;should feel effortless&rdquo;). One conflict: the process document says acknowledgment within one business day; the March email says same day.</dd>
+<dt>You correct</dt>
+<dd>Two of the &ldquo;wishes&rdquo; are constraints from the compliance note that the assistant read as preferences. You relabel them and keep them.</dd>
+<dt>You keep</dt>
+<dd>The traced list with the quotes, the strike reasons, and the conflict assigned to the operations lead.</dd>
+</dl>
+</div>
+<h2 class="part" data-part="Authority" id="boundaries-to-confirm-before-starting">Boundaries to confirm before starting</h2>
+<p class="authority-note"><strong>This guide does not grant authority.</strong> It describes a safe working pattern. Confirm the permitted environment, sources, and sharing boundary for this task before the assistant begins.</p>
+<table>
+<thead>
+<tr>
+<th>Once you have approved the boundary</th>
+<th>In this task</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The assistant may</td>
+<td>read the permitted sources; lift and quote candidates; group them; flag conflicts and non-requirements</td>
+</tr>
+<tr>
+<td>You review</td>
+<td>every keep-or-strike; every conflict resolution; the wording of anything tightened</td>
+</tr>
+<tr>
+<td>An authorized decision-maker decides</td>
+<td>any candidate that is itself a policy, purchase, or staffing decision</td>
+</tr>
+<tr>
+<td>Stop and escalate</td>
+<td>when sources hold restricted data, or are too thin to support the list</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Not sure this is the right task?</p>
+<p>Bring the sources to a <a href="../support/request-a-guided-session.html">guided first session</a>. The guide can help choose the task and the approved environment.</p>
+</div></div></div>
+  <nav class="wrap prevnext" aria-label="Previous and next"><a class="pn pn-prev" href="../guides/01-turn-a-vague-request-into-a-clear-problem-statement.html" rel="prev"><span class="pn-k">Previous</span><span>Turn a vague request into a clear problem statement</span></a><a class="pn pn-next" href="../guides/03-sort-a-documents-claims-into-the-four-labels.html" rel="next"><span class="pn-k">Next</span><span>Sort a document&#x27;s claims into the four labels</span></a></nav>
+</main>
+
+<aside class="support-strip" aria-labelledby="support-strip-title">
+  <div class="wrap support-strip-row">
+    <div>
+      <h2 id="support-strip-title" class="support-strip-title">Stuck, unsure, or something feels off?</h2>
+      <p class="support-strip-text">Asking is the expected move. A person answers.</p>
+    </div>
+    <div class="support-strip-actions">
+      <a class="btn btn-primary" href="../support/request-a-guided-session.html">Book a guided first session</a>
+      <a class="btn btn-ghost" href="../support/index.html">Talk to a person</a>
+      <a class="btn btn-quiet" href="../support/index.html#urgent">Urgent: data, security, or an action concern</a>
+    </div>
+  </div>
+</aside>
+
+<footer class="site-foot">
+  <div class="wrap site-foot-row">
+    <p class="site-foot-brand">AI Collaboration Portal · an internal program · prototype</p>
+    <ul class="site-foot-links">
+      <li><a href="../standards/index.html">Standards and safety</a></li>
+      <li><a href="../standards/environment-readiness.html">Environment readiness</a></li>
+      <li><a href="../environments/index.html">Environments</a></li>
+      <li><a href="../leaders/index.html">For leaders</a></li>
+      <li><a href="../support/faq.html">FAQ</a></li>
+      <li><a href="../about.html">About this portal</a></li>
+    </ul>
+    <p class="site-foot-note">Written by Osiris and Sage, with Aster's independent review. Names, roles, and the words this portal uses are on the <a href="../about.html#authors">About page</a>. Nothing here is a testimonial unless the people in it agreed to it. © 2026</p>
+  </div>
+</footer>
+
+<script src="../assets/site.js" defer></script>
+</body>
+</html>

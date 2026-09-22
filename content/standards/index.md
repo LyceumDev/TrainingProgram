@@ -21,7 +21,7 @@ A claim an assistant cannot source is Open, however confident it sounds. Verific
 
 ## Authority, approvals, and consequential actions
 
-Capability is not authority. Before work begins, the person establishes what the assistant may do at each of four levels: read, draft, recommend, act. Acting is granted narrowly and only in environments approved for it. A **consequential action** is anything hard to undo, visible to others, or touching money, people, or records; it is reviewed by the person before it happens, and where the organization's rules require it, decided by an authorized decision-maker. Every recipe states its authority section.
+Capability is not authority. Before work begins, the person establishes what the assistant may do at each of four levels: read, draft, recommend, act. Acting is granted narrowly and only in environments approved for it. A **consequential action** is anything hard to undo, visible to others, or touching money, people, or records; it is reviewed by the person before it happens, and where the organization's rules require it, decided by an authorized decision-maker. Every task guide ends with the boundaries to confirm before the assistant begins.
 
 ## Credentials and secrets
 

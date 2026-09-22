@@ -17,7 +17,7 @@ In business analysis: problem statements, traced requirements, sourced compariso
 
 - **Time.** A guided first session (about an hour) and permission to use an assistant on real work in the weeks after. The evidence behind this program says sustained use, not course completion, is what produces results.
 - **Tasks.** Real, permitted work your people already do. The best first tasks took time but not judgment.
-- **Boundaries.** What the working team may read, draft, recommend, and act on in your area, and which decisions stay with you. The recipes carry defaults; you confirm them for your context.
+- **Boundaries.** What the working team may read, draft, recommend, and act on in your area, and which decisions stay with you. The task guides carry defaults; you confirm them for your context.
 - **A door.** Your explicit word that asking for help, reporting a near miss, or saying "I don't know which environment I need" is expected.
 
 ## What authority is never implied
@@ -34,4 +34,4 @@ Measurement is light, transparent, and never used for individual performance eva
 
 ## What evidence would justify scaling
 
-A founding cohort whose members are still doing real work with an assistant after thirty days; artifacts that reviewers judge useful and properly sourced; boundaries that held, with near misses reported and handled without blame; recipes contributed by people outside the build team; and a repeatable onboarding and guided-session playbook. When that evidence exists, a one-page scaling case follows. Until then, the program stays small enough to learn from.
+A founding cohort whose members are still doing real work with an assistant after thirty days; artifacts that reviewers judge useful and properly sourced; boundaries that held, with near misses reported and handled without blame; task guides contributed by people outside the build team; and a repeatable onboarding and guided-session playbook. When that evidence exists, a one-page scaling case follows. Until then, the program stays small enough to learn from.

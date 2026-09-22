@@ -25,13 +25,13 @@ An assistant's ability to do something is not permission to do it. Capability is
 
 ## Start with the work you already do
 
-Pick the entrance that looks like your week. Each case shows what working with an AI assistant looks like in that work, the first three recipes to try, and where the boundaries are.
+Pick the entrance that looks like your week. Each case shows what working with an AI assistant looks like in that work, the first three task guides to try, and where the boundaries are.
 
 {{cases}}
 
-## Recipes: the how-to library you will come back to
+## Task guides: the how-to library you will come back to
 
-Recipes are one-page, task-first guides: what you are trying to do, what the assistant needs from you, what it can carry, what you decide, what to check, what to keep, and when to stop and ask. Start with these four, or [browse all recipes](~/recipes/index.html).
+Task guides are one-page, step-by-step guides for real tasks: what to do first, what the assistant carries, and the checks that make the result safe to use. Start with these four, or [browse all task guides](~/guides/index.html).
 
 {{recipes case=business-analysis limit=4}}
 

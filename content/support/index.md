@@ -35,4 +35,4 @@ Good-faith early reporting is expected and helps limit harm; handling follows or
 
 ## Something on this portal does not work for you
 
-A link, a page that does not work with your screen reader, a recipe that assumes something you do not have. Tell the guide. We treat accessibility defects as priority fixes.
+A link, a page that does not work with your screen reader, a task guide that assumes something you do not have. Tell the guide. We treat accessibility defects as priority fixes.

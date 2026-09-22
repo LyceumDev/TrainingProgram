@@ -16,12 +16,12 @@ The working model is the same as everywhere on this portal. What is distinctive 
 ## What you can do now
 
 - Read the [six lessons](~/lessons/index.html). Lessons 2 and 4 matter most in this case: the project record is the memory of the modernization, and the authority levels are what keep an assistant's technical ability from becoming an unreviewed change.
-- Use the [business-analysis recipes](~/cases/business-analysis.html). The analysis half of modernization, from problem statements to traced requirements to comparisons of options, uses exactly those recipes today, in an approved browser or document environment, or with the guide during the interim, without touching the repository.
+- Use the [business-analysis task guides](~/cases/business-analysis.html). The analysis half of modernization, from problem statements to traced requirements to comparisons of options, uses exactly those guides today, in an approved browser or document environment, or with the guide during the interim, without touching the repository.
 - [Book a guided first session](~/support/request-a-guided-session.html) and bring the system you are responsible for. The guide can show you what analysis of it looks like and what a repository environment would add.
 
 ## What waits for the repository environment
 
-The complete case, with its own recipes for repository analysis, code review, documentation, and coordination with a development team, is published when a [repository and development workspace](~/environments/index.html#repository) is approved for wider use. Working teams in the program already use one for development tasks; the assessment is about extending it beyond them.
+The complete case, with its own task guides for repository analysis, code review, documentation, and coordination with a development team, is published when a [repository and development workspace](~/environments/index.html#repository) is approved for wider use. Working teams in the program already use one for development tasks; the assessment is about extending it beyond them.
 
 ## Boundaries that already apply
 

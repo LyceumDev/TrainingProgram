@@ -36,6 +36,48 @@
   "summary": "Where the assistant will work. Setup branches by the approved place, not by whether you are technical. Not sure is a complete answer."
  },
  {
+  "title": "Turn a vague request into a clear problem statement",
+  "url": "guides/01-turn-a-vague-request-into-a-clear-problem-statement.html",
+  "section": "recipe",
+  "summary": "From a forwarded email and a few attachments to a one-page statement of what is happening, who it affects, what is known, and what is not."
+ },
+ {
+  "title": "Extract requirements in the authors' own words",
+  "url": "guides/02-extract-requirements-in-the-authors-own-words.html",
+  "section": "recipe",
+  "summary": "Lift every candidate requirement out of the sources, each with the exact sentence it came from, so nothing is invented and nothing is lost."
+ },
+ {
+  "title": "Sort a document's claims into the four labels",
+  "url": "guides/03-sort-a-documents-claims-into-the-four-labels.html",
+  "section": "recipe",
+  "summary": "Take any document, draft, or thread and label every claim as Verified, Inferred, Decided, or Open, so the reader knows exactly what stands on what."
+ },
+ {
+  "title": "Compare options against criteria you set first",
+  "url": "guides/04-compare-options-against-criteria-you-set-first.html",
+  "section": "recipe",
+  "summary": "Set the criteria before looking at the options, then let the assistant build a sourced comparison, so the recommendation follows from the criteria and not the other way round."
+ },
+ {
+  "title": "Draft a specification you can trace to its sources",
+  "url": "guides/05-draft-a-specification-you-can-trace-to-its-sources.html",
+  "section": "recipe",
+  "summary": "Turn a traced requirements list and the decisions made about it into a specification where every statement can be followed back to its origin."
+ },
+ {
+  "title": "Check a memo before it goes out",
+  "url": "guides/06-check-a-memo-before-it-goes-out.html",
+  "section": "recipe",
+  "summary": "Before a memo goes to people who will act on it, have the assistant read it the way a skeptical reader will, and fix what it finds."
+ },
+ {
+  "title": "Task guides",
+  "url": "guides/index.html",
+  "section": "recipe",
+  "summary": "Step-by-step guides for real tasks. Do the work, then govern it. This is the part of the portal you will come back to."
+ },
+ {
   "title": "Home",
   "url": "index.html",
   "section": "home",
@@ -81,55 +123,13 @@
   "title": "Begin real work",
   "url": "lessons/06-begin-real-work.html",
   "section": "lesson",
-  "summary": "Choose a case, find a recipe, pick an environment if you know it, and book a guided first session."
+  "summary": "Choose a case, find a task guide, pick an environment if you know it, and book a guided first session."
  },
  {
   "title": "The six lessons",
   "url": "lessons/index.html",
   "section": "lesson",
   "summary": "The plain-language foundation on AI and agentic collaboration. Read them in order the first time; come back to any one of them any time."
- },
- {
-  "title": "Turn a rough request into a structured problem statement",
-  "url": "recipes/01-turn-a-rough-request-into-a-problem-statement.html",
-  "section": "recipe",
-  "summary": "From a forwarded email and a few attachments to a one-page statement of the problem, who has it, what is known, and what is not."
- },
- {
-  "title": "Extract requirements while preserving source language",
-  "url": "recipes/02-extract-requirements-preserving-source-language.html",
-  "section": "recipe",
-  "summary": "Lift every candidate requirement out of the sources, each with the exact sentence it came from, so nothing is invented and nothing is lost."
- },
- {
-  "title": "Separate verified facts, inferences, decisions, and open questions",
-  "url": "recipes/03-separate-facts-inferences-decisions-and-open-questions.html",
-  "section": "recipe",
-  "summary": "Take any document, draft, or thread and sort every claim into the four labels, so the reader knows exactly what stands on what."
- },
- {
-  "title": "Compare options against explicit criteria",
-  "url": "recipes/04-compare-options-against-explicit-criteria.html",
-  "section": "recipe",
-  "summary": "Set the criteria first, then let the assistant build the comparison, so the recommendation follows from the criteria and not the other way round."
- },
- {
-  "title": "Draft a specification with traceability to sources",
-  "url": "recipes/05-draft-a-specification-with-traceability.html",
-  "section": "recipe",
-  "summary": "Turn a traced requirements list and the decisions made about it into a specification where every statement can be followed back to its origin."
- },
- {
-  "title": "Review a memo for unsupported claims, ambiguity, and missing decisions",
-  "url": "recipes/06-review-a-memo-for-unsupported-claims.html",
-  "section": "recipe",
-  "summary": "Before a memo goes to people who will act on it, have the assistant read it the way a skeptical reader will."
- },
- {
-  "title": "Recipes",
-  "url": "recipes/index.html",
-  "section": "recipe",
-  "summary": "Task-first, one-page guides. This is the part of the portal you will come back to."
  },
  {
   "title": "The environment-readiness standard",

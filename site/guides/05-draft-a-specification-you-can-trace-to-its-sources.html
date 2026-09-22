@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Draft a specification you can trace to its sources · AI Collaboration Portal</title>
+<meta name="description" content="Turn a traced requirements list and the decisions made about it into a specification where every statement can be followed back to its origin.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/styles.css">
+<script>(function(){try{var t=localStorage.getItem('portal-theme');if(t==='dark'){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}document.documentElement.classList.add('js');})();</script>
+</head>
+<body class="section-recipe">
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="site-head">
+  <div class="wrap site-head-row">
+    <a class="brand" href="../index.html"><svg class="brandmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="12" cy="17" r="10" style="fill:var(--warm)"/><rect x="13" y="5" width="16" height="20" rx="6" style="fill:var(--accent);opacity:.92"/></svg><span class="brand-name">AI Collaboration Portal</span></a>
+    <nav id="site-nav" class="site-nav" aria-label="Primary"><ul><li><a href="../index.html">Home</a></li><li><a href="../cases/index.html">Cases</a></li><li><a href="../guides/index.html" aria-current="page">Task guides</a></li><li><a href="../lessons/index.html">Lessons</a></li><li><a href="../environments/index.html">Environments</a></li><li><a href="../support/index.html">Support</a></li></ul></nav>
+    <button class="theme-toggle" type="button" aria-pressed="false"><span class="theme-toggle-dot" aria-hidden="true"></span>Dark theme</button>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>Menu
+    </button>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+  <nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../index.html">Home</a></li><li><a href="../guides/index.html">Task guides</a></li><li aria-current="page">Draft a specification you can trace to its sources</li></ol></nav>
+  <header class="page-head"><div class="wrap page-head-row"><div><p class="eyebrow">Task guide · Business analysis</p><h1>Draft a specification you can trace to its sources</h1><p class="use-when"><strong>Use this when</strong> the requirements are agreed and someone needs a document a builder can build from and a reviewer can check.</p><div class="boundary"><p><strong>You are drafting the specification, not deciding scope or priority.</strong> Every statement must be traceable back to a source sentence and forward to the decision that accepted it. That is what makes it defensible six months later when someone asks who said we needed this.</p></div><dl class="meta-strip"><div><dt>You'll create</dt><dd>a draft specification with a traceability table</dd></div><div><dt>Time</dt><dd>1 to 3 hours, in sittings</dd></div><div><dt>You'll need</dt><dd>the traced requirements list with your keep-or-strike decisions, the decisions made so far with owners, and the house template</dd></div><div><dt>Environment</dt><dd>Approved browser/document environment</dd></div><div><dt>Workflow risk</dt><dd>medium<span class="meta-caption">Review level, not data permission.</span></dd></div></dl><p class="risk-note">Workflow risk assumes permitted information in an approved environment. Data sensitivity, consequential actions, and organizational policy may require stronger controls and always override this label.</p></div></div></header>
+  <div class="wrap guide"><aside class="rail" aria-label="Guide overview"><section class="rail-card rail-how" aria-labelledby="rail-how"><h2 id="rail-how">How this guide works</h2><p>The page has two layers. Complete the task first; then apply the review and authority checks before the work goes anywhere.</p><ol class="rail-steps"><li>Do the work step by step</li><li>Review claims and framing</li><li>Confirm boundaries and save</li></ol></section><section class="rail-card" aria-labelledby="rail-before"><h2 id="rail-before">Before you start</h2><ul class="rail-checks"><li>Confirm the environment is approved for this work.</li><li>Replace personal, customer, payroll, or credential details.</li><li>Keep source names and locations so claims can be checked.</li></ul></section><nav class="rail-card" aria-labelledby="rail-toc"><h2 id="rail-toc">On this page</h2><ul class="rail-toc"><li><a href="#start-with-these-six-steps">Start with these six steps</a></li><li><a href="#use-this-specification-shape">Use this specification shape</a></li><li><a href="#review-preserve-and-know-when-to-stop">Review, preserve, and know when to stop</a></li><li><a href="#what-a-useful-exchange-looks-like">What a useful exchange looks like</a></li><li><a href="#boundaries-to-confirm-before-starting">Boundaries to confirm before starting</a></li></ul></nav><section class="rail-card" aria-labelledby="rail-key"><h2 id="rail-key">The key distinction</h2><p><strong>Statement:</strong> one requirement, stated once, testably, with an identifier.</p><p><strong>Trace:</strong> where the statement came from and who accepted it. A specification without the trace is an assertion.</p></section></aside><div class="guide-main prose"><h2 class="part" data-part="Part 1 · Do the work" id="start-with-these-six-steps">Start with these six steps</h2>
+<p>The assistant drafts and builds the table. You are the reviewer of every line, and the person who knows which decisions have actually been made.</p>
+<div class="flow">
+<ol>
+<li><strong>Gather what the draft rests on</strong>
+   The traced requirements list from the <a href="../guides/02-extract-requirements-in-the-authors-own-words.html">requirements guide</a> with your keep-or-strike decisions, the decisions made so far with their owners, the house template if there is one, and an example the organization considers good.</li>
+<li><strong>Brief the assistant</strong>
+   Who will read it: the people who build, test, and approve. What is in scope and out, and who decided that.</li>
+<li><strong>Ask for the first full draft</strong>
+   In the house shape, one requirement per statement, each with an identifier and a link back to its source sentence.</li>
+<li><strong>Ask for the traceability table and the consistency checks</strong>
+   Identifier, statement, source, the decision that accepted it, its label. Then: statements that contradict each other, terms used two ways, requirements with no acceptance criterion, and everything still <span class="label label-open">Open</span>, grouped by who can close it.</li>
+<li><strong>Review every requirement&rsquo;s wording and follow the traces</strong>
+   Pick five at random and follow each back to its source sentence. Hunt the words that hide decisions. Part 2 below has the checks.</li>
+<li><strong>Save the specification with its version, and the table beside it</strong>
+   The table is the record. It lives beside the document, not inside a conversation. Part 2 says what else the record holds.</li>
+</ol>
+</div>
+<div class="admonition starter">
+<p class="admonition-title">Starter instruction</p>
+<p>Copy this once the traced list and the decisions are in the folder.</p>
+<pre><code>Draft a specification from this traced requirements list, using the house template. State each requirement once, testably, with an identifier and a link to its source sentence. Build a traceability table with the identifier, the statement, the source, the decision that accepted it, and its label. Run consistency checks for contradictions, terms used two ways, and requirements without an acceptance criterion. List everything still Open, grouped by who can close it. Do not introduce requirements that have no source or no named decision.
+</code></pre>
+</div>
+<h2 class="part" data-part="The deliverable" id="use-this-specification-shape">Use this specification shape</h2>
+<p>The house template governs the order. These parts should all be present.</p>
+<div class="shape">
+<ol>
+<li><strong>Purpose and readers</strong> What the specification is for and who builds, tests, and approves from it.</li>
+<li><strong>Scope</strong> What is in and out, and who decided.</li>
+<li><strong>Requirements</strong> One per statement, identified, testable.</li>
+<li><strong>Acceptance criteria</strong> How each requirement will be checked.</li>
+<li><strong>The traceability table</strong> Identifier, statement, source, accepting decision, label.</li>
+<li><strong>Open items</strong> Grouped by who can close them.</li>
+<li><strong>Version and change history</strong> What changed, when, and why.</li>
+</ol>
+</div>
+<h2 class="part" data-part="Part 2 · Govern the work" id="review-preserve-and-know-when-to-stop">Review, preserve, and know when to stop</h2>
+<p>These are not more drafting steps. They are the checks that make the specification something a builder can build from and a reviewer can check.</p>
+<div class="govern">
+<div class="govern-card">
+<h3 id="what-you-decide">What you decide</h3>
+<ul>
+<li>Every requirement&rsquo;s final wording. The assistant may draft or propose changes. You review and approve the final text, remain accountable for its use, and preserve contribution provenance where material.</li>
+<li>Priority and scope calls, or who makes them.</li>
+<li>Whether the specification is ready for review, or whether the Open list is still too long to be honest about.</li>
+</ul>
+</div>
+<div class="govern-card">
+<h3 id="check-before-use">Check before use</h3>
+<ul>
+<li>Five requirements at random, each followed back through the table to its source sentence. All five must arrive.</li>
+<li>The words that hide decisions: &ldquo;appropriate,&rdquo; &ldquo;as needed,&rdquo; &ldquo;intuitive,&rdquo; &ldquo;etc.&rdquo; Each is defined or becomes an Open item.</li>
+<li>No requirement introduced during drafting lacks a source or a named decision. Drafting is where requirements get invented.</li>
+</ul>
+</div>
+<div class="govern-card">
+<h3 id="keep-in-the-record">Keep in the record</h3>
+<ul>
+<li>The specification, with its version.</li>
+<li>The traceability table, beside the document.</li>
+<li>The Open list, and the review comments when they come.</li>
+</ul>
+</div>
+<div class="govern-card">
+<h3 id="stop-and-ask">Stop and ask</h3>
+<ul>
+<li>The specification would commit the organization to something no authorized person has decided. Mark it Open and raise it.</li>
+<li>It touches personal, customer, or payroll data flows. Specify the data classes and rules without real examples, and involve Security early.</li>
+<li>Whole sections lack sources and decisions. The analysis is not done; that is not a gap for the assistant to fill.</li>
+</ul>
+</div>
+</div>
+<h2 class="part" data-part="Worked example" id="what-a-useful-exchange-looks-like">What a useful exchange looks like</h2>
+<div class="exchange">
+<dl>
+<dt>You provide</dt>
+<dd>&ldquo;The traced list with my keep-or-strike decisions, the scope decision from the operations lead, and the house template. Readers: the build team and the QA lead.&rdquo;</dd>
+<dt>The assistant returns</dt>
+<dd>Thirty-one requirements, each traced. Two contradictions: R-07 says acknowledgment within one business day, R-19 says same day; both trace to different sources and the conflict was never decided, so both are left Open with the operations lead as owner. Four uses of &ldquo;as needed&rdquo; without a definition, listed.</dd>
+<dt>You correct</dt>
+<dd>R-12 appeared during drafting with no source and no decision behind it. You strike it and note why in the change history.</dd>
+<dt>You keep</dt>
+<dd>The specification at version 0.1, the traceability table beside it, and the Open list, in the project folder.</dd>
+</dl>
+</div>
+<h2 class="part" data-part="Authority" id="boundaries-to-confirm-before-starting">Boundaries to confirm before starting</h2>
+<p class="authority-note"><strong>This guide does not grant authority.</strong> It describes a safe working pattern. Confirm the permitted environment, sources, and sharing boundary for this task before the assistant begins.</p>
+<table>
+<thead>
+<tr>
+<th>Once you have approved the boundary</th>
+<th>In this task</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The assistant may</td>
+<td>draft; build the traceability table; run consistency checks; list Open items</td>
+</tr>
+<tr>
+<td>You review</td>
+<td>every requirement&rsquo;s wording; the table; readiness for review</td>
+</tr>
+<tr>
+<td>An authorized decision-maker decides</td>
+<td>scope, priority, and any requirement with budget, policy, or staffing effect</td>
+</tr>
+<tr>
+<td>Stop and escalate</td>
+<td>when a commitment no one authorized appears, or sensitive data flows are specified without Security involved</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Not sure this is the right task?</p>
+<p>Bring the requirements to a <a href="../support/request-a-guided-session.html">guided first session</a>. The guide can help choose the task and the approved environment.</p>
+</div></div></div>
+  <nav class="wrap prevnext" aria-label="Previous and next"><a class="pn pn-prev" href="../guides/04-compare-options-against-criteria-you-set-first.html" rel="prev"><span class="pn-k">Previous</span><span>Compare options against criteria you set first</span></a><a class="pn pn-next" href="../guides/06-check-a-memo-before-it-goes-out.html" rel="next"><span class="pn-k">Next</span><span>Check a memo before it goes out</span></a></nav>
+</main>
+
+<aside class="support-strip" aria-labelledby="support-strip-title">
+  <div class="wrap support-strip-row">
+    <div>
+      <h2 id="support-strip-title" class="support-strip-title">Stuck, unsure, or something feels off?</h2>
+      <p class="support-strip-text">Asking is the expected move. A person answers.</p>
+    </div>
+    <div class="support-strip-actions">
+      <a class="btn btn-primary" href="../support/request-a-guided-session.html">Book a guided first session</a>
+      <a class="btn btn-ghost" href="../support/index.html">Talk to a person</a>
+      <a class="btn btn-quiet" href="../support/index.html#urgent">Urgent: data, security, or an action concern</a>
+    </div>
+  </div>
+</aside>
+
+<footer class="site-foot">
+  <div class="wrap site-foot-row">
+    <p class="site-foot-brand">AI Collaboration Portal · an internal program · prototype</p>
+    <ul class="site-foot-links">
+      <li><a href="../standards/index.html">Standards and safety</a></li>
+      <li><a href="../standards/environment-readiness.html">Environment readiness</a></li>
+      <li><a href="../environments/index.html">Environments</a></li>
+      <li><a href="../leaders/index.html">For leaders</a></li>
+      <li><a href="../support/faq.html">FAQ</a></li>
+      <li><a href="../about.html">About this portal</a></li>
+    </ul>
+    <p class="site-foot-note">Written by Osiris and Sage, with Aster's independent review. Names, roles, and the words this portal uses are on the <a href="../about.html#authors">About page</a>. Nothing here is a testimonial unless the people in it agreed to it. © 2026</p>
+  </div>
+</footer>
+
+<script src="../assets/site.js" defer></script>
+</body>
+</html>

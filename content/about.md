@@ -5,7 +5,7 @@ summary: What the AI Collaboration Portal is for OneTouchHCM, what it offers emp
 ---
 ## What this program is
 
-The AI Collaboration Portal is OneTouchHCM's internal program for putting approved AI assistants to work on real tasks, safely and productively. It is built around three kinds of work the organization does every day: modernization, business analysis and specification writing, and customer support. It provides task-first recipes, six short lessons on the working model, plainly stated standards, and a guided first session with a program guide.
+The AI Collaboration Portal is OneTouchHCM's internal program for putting approved AI assistants to work on real tasks, safely and productively. It is built around three kinds of work the organization does every day: modernization, business analysis and specification writing, and customer support. It provides step-by-step task guides, six short lessons on the working model, plainly stated standards, and a guided first session with a program guide.
 
 The portal makes approved policy usable. It does not create policy or authorize any product, and it states which environments are approved and which are still being assessed.
 
@@ -16,7 +16,7 @@ The portal makes approved policy usable. It does not create policy or authorize 
 - A clear, approved path to using AI on your own work, with the boundaries stated up front.
 - Less of your time on the heavy, repeatable parts of the work: first drafts, summaries, comparisons, and cross-checks.
 - A guided first session with a person, so your first real task is finished rather than attempted.
-- Recipes written for the work you already do, that you can return to.
+- Task guides written for the work you already do, that you can return to.
 - Your judgment, your decisions, and your accountability stay central, and become more visible, not less.
 
 ## Our approach: partnership {: #approach }
