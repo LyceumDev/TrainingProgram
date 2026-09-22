@@ -125,6 +125,11 @@ html.js .theme-toggle { display: inline-flex; }
   html.js .site-nav a { display: block; padding: .75rem .9rem; border-radius: var(--radius-sm); }
   .brand-name { font-size: .98rem; }
 }
+@media (max-width: 480px) {
+  .site-head-row { gap: .6rem; }
+  .brand-name { font-size: .9rem; }
+  .theme-toggle { font-size: 0; gap: 0; padding: .6rem; }
+}
 
 /* --------------------------------------------------------------- crumbs */
 .crumbs { margin-top: 1.25rem; font-size: .92rem; color: var(--ink-3); }
